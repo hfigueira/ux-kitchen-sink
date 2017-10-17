@@ -1,0 +1,39 @@
+{
+  "name": "ux-kitchen-sink",
+  "version": "1.0.0",
+  "description": "ux-kitchen-sink",
+  "main": "index.js",
+  "scripts": {
+    "clean": "cleandir dist",
+    "sass": "node-sass src/styles/main.scss dist/styles/main.css",
+    "html": "copy 'src/*.html' dist",
+    "watch": "parallel watch:html watch:scss",
+    "watch:html": "nodemon -e html -w src --exec npm run html",
+    "watch:scss": "nodemon -e scss -w src --exec npm run sass",
+    "server": "npm run build && browser-sync start -s dist -f dist",
+    "dev": "parallel server watch",
+    "build": "npm run clean && npm run html && npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfigueira/ux-kitchen-sink.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hfigueira/ux-kitchen-sink/issues"
+  },
+  "homepage": "https://github.com/hfigueira/ux-kitchen-sink#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
+    "clean-dir": "^1.0.3",
+    "copy": "^0.3.1",
+    "gulp": "^3.9.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "npm-parallel": "^2.0.1",
+    "postcss": "^6.0.13",
+    "postcss-cli": "^4.1.1"
+  }
+}
