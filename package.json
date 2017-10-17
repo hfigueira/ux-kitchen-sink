@@ -29,7 +29,6 @@
     "browser-sync": "^2.18.13",
     "clean-dir": "^1.0.3",
     "copy": "^0.3.1",
-    "gulp": "^3.9.1",
     "node-sass": "^4.5.3",
     "nodemon": "^1.12.1",
     "npm-parallel": "^2.0.1",
