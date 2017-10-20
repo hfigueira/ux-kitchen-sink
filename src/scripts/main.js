@@ -29,6 +29,8 @@ var app = (function() {
     document.getElementsByTagName("head")[0].appendChild(element);
   }
 
+  console.log(">>>");
+
   return {
     changeTheme: changeTheme
   };
