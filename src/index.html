@@ -1,21 +1,51 @@
 <html>
+
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Hitachi Kitchen Sinc</title>
 	<link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
 
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	<h1>UX Kitchen Sink</h1>
-	
+	<header>
+		<div class="logo"></div>
+		<div class="nav">
+			<div class="nav-left">Hitachi Vantara</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="col-left">
+			<div class="theme-config">
+				<p>Theme</p>
+				<select class="theme-selector" onchange="app.changeTheme()">
+					<option value="ruby">Ruby</option>
+					<option value="saphire">Saphire</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="col-content">
+			<div class="content-title">Lorem ipsum</div>
+			<div class="content-sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+			<hr>
+			<div class="content-desc">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+				accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+				montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus
+				sapien nunc eget.
+			</div>
+			<div class="content-snippet">
+				<button type="button" class="btn btn-primary">Primary</button>
+				<button type="button" class="btn btn-secondary">Secondary</button>
+			</div>
+		</div>
+
+		<div class="col-right"></div>
+	</section>
+
+	<script src="js/main.js"></script>
 </body>
+
 </html>
