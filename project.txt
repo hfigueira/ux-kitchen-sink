@@ -7,7 +7,7 @@
                 ├─ variables.scss
                 ├─ fonts.scss
                 ├─ colors.scss
-                ├─ buttons.scss
+                └─ buttons.scss
             └─ saphire
         └─ components/
             └─ buttons.html
