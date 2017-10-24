@@ -1,6 +1,6 @@
 var app = (function() {
   var defaultTheme = "ruby";
-  var activeTheme = getActiveTheme();
+  var activeTheme = localStorage.getItem("activeTheme") || defaultTheme;
   var themeSelector = document.getElementsByClassName("theme-selector")[0];
 
   setActiveTheme(activeTheme);
@@ -17,10 +17,6 @@ var app = (function() {
     localStorage.setItem("activeTheme", theme);
   }
 
-  function getActiveTheme() {
-    return localStorage.getItem("activeTheme") || defaultTheme;
-  }
-
   function loadTheme(theme) {
     var element = document.createElement("link");
     element.setAttribute("rel", "stylesheet");
@@ -28,8 +24,6 @@ var app = (function() {
     element.setAttribute("href", "styles/" + theme + ".css");
     document.getElementsByTagName("head")[0].appendChild(element);
   }
-
-  console.log(">>>");
 
   return {
     changeTheme: changeTheme
