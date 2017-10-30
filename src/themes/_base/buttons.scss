@@ -1,3 +1,21 @@
 .btn {
-  color: $button-main-color;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.875em;
+    line-height: 1em;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: $main-color;
+    border: $button-main-color;
+    &.outline {
+        border: 1px solid $main-color;
+        background-color: white;
+        color: $main-color;
+    }
+    &:disabled {
+        background-color: $disabled-main-button;
+        color: $disabled-main-button-text;
+    }
 }
