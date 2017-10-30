@@ -1,0 +1,13 @@
+{
+  "components": {
+    "path": "./src/doc/_components",
+    "outputPath": "./dist/doc/components"
+  },
+  "themes": {
+    "path": "./src/themes",
+    "outputPath": "./dist/themes"
+  },
+  "templates": {
+    "path": "./src/doc/static/templates"
+  }
+}
