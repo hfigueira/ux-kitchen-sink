@@ -1,3 +1,9 @@
-$button-main-color: $main-color;
-
+// Primary button
+$primary-button-background-color: $main-color;
+$primary-button-hover-color: $secondary-color;
+$primary-button-color: $white;
+// Disabled button
+$disabled-background-color: $light-gray;
+$disabled-color: $dark-gray;
+// List
 $list-main-color: $main-color;
