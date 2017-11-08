@@ -1,0 +1,35 @@
+// COLORS
+.background-color-container {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    color: $white;
+}
+
+.background-color-container {
+    &.primary-color {
+        background-color: $main-color;
+    }
+    &.secondary-color {
+        background-color: $secondary-color;
+    }
+    &.primary-hover-color {
+        background-color: $primary-hover-color;
+    }
+    &.tertiary-color {
+        background-color: $tertiary-color;
+    }
+    &.light-gray {
+        color: $dark-gray;
+        background-color: $light-gray;
+    }
+    &.medium-gray {
+        background-color: $medium-gray;
+        color: $dark-gray;
+    }
+    &.dark-gray {
+        background-color: $dark-gray;
+    }
+}
