@@ -1,3 +1,22 @@
-.list {
-    color: $list-main-color;
+ul.list-container {
+    list-style: none;
+    border: 1px solid #CCCCCC;
+    padding: 0;
+    margin: 0;
+    max-width: 200px;
+    min-height: 200px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+li {
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #414141;
+    &:hover {
+        background-color: $list-main-hover-color;
+    }
+    &.selected {
+        background-color: $primary-hover-color;
+    }
 }
