@@ -1,8 +1,12 @@
 import fs from "fs-extra";
 import path from "path";
 import pug from "pug";
+import $ from "cheerio";
 import frontMatter from "front-matter";
 import markDown from "markdown-it";
+import attrs from "markdown-it-attrs";
+import htmlencode from "htmlencode";
+
 import config from "../config.json";
 
 const componentsOutputPath = config.components.outputPath;
@@ -30,8 +34,8 @@ const getFiles = path => {
 const validateSpecs = file => {
   const specs = getComponentSpecs(file);
   const hasImpl = fs.existsSync(specs.impl);
-  const hasDef = fs.existsSync(specs.def);
-  return hasImpl && hasDef;
+  const hasDoc = fs.existsSync(specs.doc);
+  return hasImpl && hasDoc;
 };
 
 const processComponent = file => {
@@ -39,26 +43,46 @@ const processComponent = file => {
   return {
     name: file,
     impl: fs.readFileSync(specs.impl).toString(),
-    def: fs.readFileSync(specs.def).toString()
+    doc: fs.readFileSync(specs.doc).toString()
   };
 };
 
 const getComponentSpecs = name => {
   return {
     impl: `${componentsPath}/${name}/${name}.html`,
-    def: `${componentsPath}/${name}/${name}.md`
+    doc: `${componentsPath}/${name}/${name}.md`
   };
 };
 
 const parseComponent = component => {
-  const parsedMetadata = frontMatter(component.def);
-  const parsedMarkdown = markDown("commonmark").render(parsedMetadata.body);
+  const parsedMetadata = frontMatter(component.doc);
+  const parsedMarkdown = markDown("commonmark")
+    .use(attrs)
+    .render(parsedMetadata.body);
 
   return Object.assign({}, parsedMetadata.attributes, {
     name: component.name,
-    impl: component.impl,
-    content: parsedMarkdown
+    content: mergeCompomentImpl(parsedMarkdown, component.impl)
   });
+};
+
+const mergeCompomentImpl = (docDOM, implDOM) => {
+  const baseDOM = fs.readFileSync(`${componentsPath}/base.html`).toString();
+  const loadedDoc = $.load(docDOM);
+
+  $("[id^=impl]", implDOM).each((i, implElem) => {
+    const loadedBase = $.load(baseDOM);
+    const implDOM = $.load(implElem.children).html();
+
+    loadedBase(".content-placeholder").each((i, elem) => {
+      const dom = i > 0 ? htmlencode.htmlEncode(implDOM) : implDOM;
+      $(elem).replaceWith(dom);
+    });
+
+    loadedDoc("#" + implElem.attribs.id).replaceWith(loadedBase.html());
+  });
+
+  return loadedDoc.html();
 };
 
 const processComponentList = component => {
