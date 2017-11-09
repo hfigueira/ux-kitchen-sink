@@ -1,1 +1,78 @@
 // DIALOGS
+.dialog-background {
+    background-color: opacify($color: $dark-gray, $amount: .5);
+    padding: 40px;
+}
+
+.dialogContainer {
+    width: 500px;
+    background-color: $white;
+    border: 1px solid $medium-gray;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0 auto; //just to center align the container
+}
+
+.dialogFooter {
+    padding-top: 20px;
+    text-align: right;
+    button {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+.title {
+    font-weight: 100;
+    font-size: 24px;
+    color: $dark-gray;
+    margin-bottom: 20px;
+}
+
+.fieldSet {
+    font-weight: normal;
+    font-size: 14px;
+    color: #999999;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.textElement {
+    p.inputLabel {
+        width: 100%;
+        margin: 0 0 5px;
+        padding: 0;
+    }
+    input {
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        height: 37px;
+        padding: 0 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        border: 1px solid #999999;
+        width: 100%;
+        color: $dark-gray;
+        font-size: 14px;
+        font-weight: normal;
+        &:focus,
+        &:hover,
+        &:active {
+            border-color: darken($color: $dark-gray, $amount: .5);
+        }
+        &.short {
+            width: 150px;
+        }
+        &.default {
+            width: 250px;
+        }
+        &.long {
+            width: 350px;
+        }
+        &.inputWithButton {
+            width: 250px;
+            margin-right: 10px;
+        }
+    }
+}

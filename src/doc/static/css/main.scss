@@ -8,6 +8,10 @@ $ultra-light-gray: rgb(245, 246, 247);
 $red: rgb(203, 0, 0);
 $border: 1px solid $light-gray;
 $hover-main-color: rgba(204, 0, 0, .2);
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
