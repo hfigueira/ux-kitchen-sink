@@ -24,17 +24,22 @@
     "babel-preset-stage-2": "^6.24.1",
     "babelify": "^8.0.0",
     "browser-sync": "^2.18.13",
+    "cheerio": "^1.0.0-rc.2",
     "clean-dir": "^1.0.3",
     "copy": "^0.3.1",
     "front-matter": "^2.2.0",
     "fs-extra": "^4.0.2",
+    "html-entities": "^1.2.1",
+    "htmlencode": "0.0.4",
     "markdown-it": "^8.4.0",
+    "markdown-it-attrs": "^1.2.0",
     "node-sass": "^4.5.3",
     "npm-parallel": "^2.0.1",
     "npm-run-all": "^4.1.1",
     "postcss": "^6.0.13",
     "postcss-cli": "^4.1.1",
     "pug": "^2.0.0-rc.4",
+    "sanitize-html": "^1.15.0",
     "watch": "^1.0.2"
   }
 }
