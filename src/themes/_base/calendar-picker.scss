@@ -1,0 +1,22 @@
+// CALENDAR PICKER
+input.date-input {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 17px;
+    padding: 0 10px;
+    background-color: $main-color;
+    border: 1px solid #CCC;
+    height: 33px;
+    width: 130px;
+    font-size: 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #666;
+    background: url("/doc/img/calendar-white.png"), -webkit-linear-gradient(right, $main-color, $main-color 30%, transparent 30%, transparent 100%);
+    background: url("/doc/img/calendar-white.png"), linear-gradient(to left, $main-color, $main-color 30%, transparent 30%, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: 90% 47%;
+    &:focus,
+    &:active {
+        border-color: darken($color: $dark-gray, $amount: .51);
+    }
+}

@@ -4,7 +4,7 @@
     padding: 40px;
 }
 
-.dialogContainer {
+.dialog-container {
     width: 500px;
     background-color: $white;
     border: 1px solid $medium-gray;
@@ -14,7 +14,14 @@
     margin: 0 auto; //just to center align the container
 }
 
-.dialogFooter {
+.dialog-title {
+    font-weight: 100;
+    font-size: 24px;
+    color: $dark-gray;
+    margin-bottom: 20px;
+}
+
+.dialog-footer {
     padding-top: 20px;
     text-align: right;
     button {
@@ -23,14 +30,7 @@
     }
 }
 
-.title {
-    font-weight: 100;
-    font-size: 24px;
-    color: $dark-gray;
-    margin-bottom: 20px;
-}
-
-.fieldSet {
+.field-set {
     font-weight: normal;
     font-size: 14px;
     color: #999999;
@@ -39,8 +39,8 @@
     padding-bottom: 5px;
 }
 
-.textElement {
-    p.inputLabel {
+.text-element {
+    p.input-label {
         width: 100%;
         margin: 0 0 5px;
         padding: 0;
@@ -59,7 +59,7 @@
         &:focus,
         &:hover,
         &:active {
-            border-color: darken($color: $dark-gray, $amount: .5);
+            border-color: darken($color: $dark-gray, $amount: .51);
         }
         &.short {
             width: 150px;
@@ -70,7 +70,7 @@
         &.long {
             width: 350px;
         }
-        &.inputWithButton {
+        &.input-with-button {
             width: 250px;
             margin-right: 10px;
         }

@@ -1,11 +1,11 @@
 // PUC HEADER
-.pucHeader {
+.puc-header {
     font-size: 13px;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     box-shadow: 0px 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.pucMenuBar {
+.puc-menu-bar {
     padding: 0;
     width: 100%;
     background: $light-gray;
@@ -29,7 +29,7 @@
     }
 }
 
-.pucPerspective {
+.puc-perspective {
     padding: 0;
     width: 100%;
     background: $light-gray;
