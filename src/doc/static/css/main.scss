@@ -31,8 +31,13 @@ p {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     .logo {
-        height: 48px;
+        height: 50px;
         background: url("../img/hitachi-logo.png") 15px 10px no-repeat $light-gray;
         border-top: 4px solid $red;
     }
@@ -55,12 +60,16 @@ p {
     height: 100%;
     .col-left {
         border-right: $border;
-        flex: 0 0 250px;
+        width: 250px;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        height: 100%;
         p.title {
             font-size: 0.75em;
             font-weight: 600;
             padding: 0;
-            margin: 10px 0;
+            margin: 0 0 10px 0;
         }
         .themes {
             border-bottom: $border;
@@ -112,6 +121,7 @@ p {
         flex: 1;
         padding: 0 30px;
         .content-desc {
+            padding: 100px 205px 0 250px;
             hr {
                 border: 0;
                 height: 1px;
@@ -150,7 +160,12 @@ p {
         }
     }
     .col-right {
-        flex: 0 0 205px;
+        width: 205px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
         border-left: $border;
+        padding-top: 100px;
     }
 }

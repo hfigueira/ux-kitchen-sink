@@ -1,86 +1,121 @@
-        // BUTTONS
-        .btn {
+// BUTTONS
+.btn {
+    color: $white;
+    padding: 10px 20px;
+    font-size: 0.875em;
+    line-height: 1em;
+    border-radius: 4px;
+}
+
+// Buttons outline
+.btn-primary.filled {
+    background-color: $primary-button-background-color;
+    border: 1px solid $primary-button-background-color;
+    color: $primary-button-color;
+    &:hover,
+    &.hover {
+        background-color: $primary-button-hover-color;
+        border-color: $primary-button-hover-color;
+        color: $primary-button-color;
+    }
+    &:disabled {
+        background-color: $disabled-background-color;
+        border-color: $disabled-background-color;
+        color: $disabled-color;
+        cursor: not-allowed;
+    }
+}
+
+// Buttons filled
+.btn-primary.outline {
+    background-color: $white;
+    border: 1px solid $primary-button-background-color;
+    color: $primary-button-background-color;
+    &:hover,
+    &.hover {
+        background-color: $primary-button-background-color;
+        border-color: $primary-button-background-color;
+        color: $primary-button-color;
+    }
+    &:disabled {
+        background-color: $disabled-background-color;
+        border-color: $disabled-background-color;
+        color: $disabled-color;
+        cursor: not-allowed;
+    }
+}
+
+// Button group
+.btn-group {
+    font-size: 0;
+    border: 1px solid $main-color;
+    color: $main-color;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px;
+    >.btn {
+        font-size: 14px;
+        line-height: 1em;
+        padding: 10px 20px;
+        color: $main-color;
+        white-space: nowrap;
+        text-align: center;
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+        &.selected {
+            border-left: 1px solid $white;
+            border-right: 1px solid $white;
             color: $white;
-            padding: 10px 20px;
-            font-size: 0.875em;
-            line-height: 1em;
-            border-radius: 4px;
+            background: url("/doc/img/check.png");
+            background-repeat: no-repeat;
+            background-position: left 8px center;
+            background-color: $main-color;
         }
-        
-        // Buttons outline
-        .btn-primary.filled {
-            background-color: $primary-button-background-color;
-            border: 1px solid $primary-button-background-color;
-            color: $primary-button-color;
-            &:hover,
-            &.hover {
-                background-color: $primary-button-hover-color;
-                border-color: $primary-button-hover-color;
-                color: $primary-button-color;
-            }
-            &:disabled {
-                background-color: $disabled-background-color;
-                border-color: $disabled-background-color;
-                color: $disabled-color;
-                cursor: not-allowed;
-            }
+        &:hover {
+            background-color: $main-color;
+            color: #FFF;
         }
-        
-        // Buttons filled
-        .btn-primary.outline {
-            background-color: $white;
-            border: 1px solid $primary-button-background-color;
-            color: $primary-button-background-color;
-            &:hover,
-            &.hover {
-                background-color: $primary-button-background-color;
-                border-color: $primary-button-background-color;
-                color: $primary-button-color;
-            }
-            &:disabled {
-                background-color: $disabled-background-color;
-                border-color: $disabled-background-color;
-                color: $disabled-color;
-                cursor: not-allowed;
-            }
+        &:first-child {
+            border-radius: 4px 0px 0px 4px;
         }
-        
-        // Button group
-        .btn-group {
-            font-size: 0;
-            border: 1px solid $main-color;
+        &:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}
+
+// Toggles
+.btn-group-toggle {
+    font-size: 0;
+    white-space: nowrap;
+    border-radius: 4px;
+    .toggle {
+        height: 30px;
+        border: 1px solid $medium-gray;
+        color: $dark-gray;
+        display: inline-block;
+        margin: 10px;
+        font-size: 14px;
+        line-height: 1em;
+        padding: 6px 10px;
+        white-space: nowrap;
+        text-align: center;
+        margin: 0;
+        margin-left: -1px;
+        vertical-align: top;
+        &.selected {
+            border-bottom: 3px solid $main-color;
             color: $main-color;
-            border-radius: 4px;
-            display: inline-block;
-            margin: 10px;
-            >.btn {
-                font-size: 14px;
-                line-height: 1em;
-                padding: 10px 20px;
-                color: $main-color;
-                white-space: nowrap;
-                text-align: center;
-                margin: 0;
-                border-radius: 0;
-                border: 0;
-                &.selected {
-                    border-left: 1px solid $white;
-                    border-right: 1px solid $white;
-                    color: $white;
-                    background: url("/doc/img/check.png");
-                    background-repeat: no-repeat;
-                    background-position: left 8px center;
-                    background-color: $main-color;
-                }
-                &:hover {
-                    background-color: $main-color;
-                    color: #FFF;
-                }
-                &:first-child {
-                    border-radius: 4px 0px 0px 4px;
-                }
-                &:last-child {
-                    border-radius: 0 4px 4px 0;
-                }
-            }
         }
+        &:hover {
+            color: $dark-gray;
+        }
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+        &:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}
