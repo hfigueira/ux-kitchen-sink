@@ -34,11 +34,11 @@
     border-left: 1px solid #CCC;
     border-right: 1px solid #CCC;
     border-bottom: 1px solid #FFF;
-    border-top: 4px solid $main-color;
-    color: $main-color;
+    border-top: 4px solid $primary-color;
+    color: $primary-color;
 }
 
 .tab-selector li:hover {
-    color: $main-color;
+    color: $primary-color;
     cursor: pointer;
 }

@@ -1,7 +1,58 @@
-$main-color: #005DA6;
-$secondary-color: #0F2B5B;
-$tertiary-color: #669ECA;
-$primary-hover-color: #E6EFF6;
-$light-gray:#F0F0F0;
-$medium-gray:#CCCCCC;
-$dark-gray:#212121;
+// General Colors
+$white: #ffffff;
+$super-light-gray: #FDFDFD;
+$light-gray:#F8F8F8;
+$medium-gray:#E0E0E0;
+$gray: #CCCCCC;
+$medium-dark-gray: #666666;
+$dark-gray:#414141;
+$super-light-blue: #E6EFF6;
+$light-blue: #669ECA;
+$blue: #005DA6;
+$dark-blue: #0F2B5B;
+//
+// Functional Variables
+$primary-color: $blue;
+$secondary-color: $dark-blue;
+$tertiary-color: $super-light-blue;
+$quaternary-color: $light-blue;
+$primary-hover-color: $dark-blue;
+$text-light-color: $white;
+$text-dark-color: $dark-gray;
+//
+//
+//
+//
+//
+// ------------- THEME VARIABLES -------------
+//
+// BUTTONS
+// Primary button
+$primary-button-background-color: $primary-color;
+$primary-button-hover-background-color: $secondary-color;
+$primary-button-text-color: $white;
+// Secondary button
+$secondary-button-background-color: $white;
+$secondary-button-border-color: $primary-color;
+$secondary-button-hover-background-color: $primary-color;
+$secondary-button-text-color: $primary-color;
+$secondary-button-hover-text-color: $white;
+//
+//
+// HEADERS
+// PUC header
+$puc-top-header-background-color: $secondary-color;
+$puc-top-header-border: 0;
+$puc-bottom-header-background-color: $primary-color;
+$puc-bottom-header-background-hover-color: $primary-color;
+$puc-header-menu-text-color: $white;
+$puc-header-text-color: $white;
+$puc-header-menu-icon: url('/doc/img/dropdown_down_arrow_white.png');
+//
+//
+//
+// LISTS
+$list-primary-selected-background-color: $primary-hover-color;
+$list-primary-selected-text-color: $text-light-color;
+$list-primary-text-color: $text-dark-color;
+$list-primary-hover-background-color: $tertiary-color;

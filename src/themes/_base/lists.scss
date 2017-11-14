@@ -1,6 +1,6 @@
 ul.list-container {
+    border: 1px solid $list-container-border-color;
     list-style: none;
-    border: 1px solid #CCCCCC;
     padding: 0;
     margin: 0;
     max-width: 200px;
@@ -9,14 +9,15 @@ ul.list-container {
 }
 
 li {
+    color: $list-primary-text-color;
     line-height: 25px;
     padding: 0 10px;
     font-size: 14px;
-    color: #414141;
     &:hover {
-        background-color: $list-main-hover-color;
+        background-color: $list-primary-hover-background-color;
     }
     &.selected {
-        background-color: $primary-hover-color;
+        background-color: $list-primary-selected-background-color;
+        color: $list-primary-selected-text-color;
     }
 }

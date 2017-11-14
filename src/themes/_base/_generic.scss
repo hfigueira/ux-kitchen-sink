@@ -1,10 +1,42 @@
+// BUTTONS -------------------------------------------
 // Primary button
-$primary-button-background-color: $main-color;
-$primary-button-hover-color: $secondary-color;
-$primary-button-color: $white;
+$primary-button-background-color: $white !default;
+$primary-button-hover-background-color: $primary-color !default;
+$primary-button-border-color: $primary-color !default;
+$primary-button-hover-border-color: $primary-color !default;
+$primary-button-text-color: $primary-color !default;
+$primary-button-hover-text-color: $white !default;
+// Secondary button
+$secondary-button-background-color: $primary-color !default;
+$secondary-button-hover-background-color: $secondary-color !default;
+$secondary-button-border-color: $primary-color !default;
+$secondary-button-hover-border-color: $secondary-color !default;
+$secondary-button-text-color: $white !default;
+$secondary-button-hover-text-color: $white !default;
 // Disabled button
-$disabled-background-color: $light-gray;
-$disabled-color: $dark-gray;
-// List
-$list-main-color: $main-color;
-$list-main-hover-color: $medium-gray;
+$primary-button-disabled-background-color: $primary-disabled-color !default;
+$primary-button-disabled-hover-background-color: $primary-disabled-color !default;
+$primary-button-disabled-border-color: $primary-disabled-color !default;
+$primary-button-disabled-hover-border-color: $primary-color !default;
+$primary-button-disabled-text-color: $secondary-disabled-color !default;
+$primary-button-disabled-hover-text-color: $secondary-disabled-color !default;
+//
+//
+// HEADERS ---------------------------------------------
+// PUC Header
+$puc-top-header-background-color: $light-gray !default;
+$puc-top-header-border: 4px solid $primary-color !default;
+$puc-bottom-header-background-color: $light-gray !default;
+$puc-bottom-header-background-hover-color: $primary-color !default;
+$puc-header-text-color: $dark-gray !default;
+$puc-header-menu-text-color: $dark-gray !default;
+$puc-header-menu-arrow: url('/doc/img/dropdown_down_arrow_black.png') !default;
+//
+//
+// LISTS ---------------------------------------------
+// Lists
+$list-container-border-color: $gray !default;
+$list-primary-text-color: $dark-gray !default;
+$list-primary-hover-background-color: $medium-gray !default;
+$list-primary-selected-background-color: $primary-hover-color !default;
+$list-primary-selected-text-color: $dark-gray !default;

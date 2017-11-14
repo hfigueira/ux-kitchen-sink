@@ -6,10 +6,10 @@
 }
 
 .puc-menu-bar {
+    background: $puc-top-header-background-color;
+    border-top: $puc-top-header-border;
     padding: 0;
     width: 100%;
-    background: $light-gray;
-    border-top: 4px solid $main-color;
     font-weight: 100;
     ul {
         list-style: none;
@@ -17,13 +17,13 @@
         padding: 0;
     }
     li {
+        color: $puc-header-text-color;
         display: inline-block;
-        color: $dark-gray;
         font-size: 13px;
         line-height: 20px;
         padding: 5px 15px;
         &:hover {
-            background-color: $primary-button-background-color;
+            background-color: $puc-bottom-header-background-hover-color;
             color: $white;
         }
     }
@@ -32,7 +32,7 @@
 .puc-perspective {
     padding: 0;
     width: 100%;
-    background: $light-gray;
+    background: $puc-bottom-header-background-color;
     font-weight: 100;
     height: 50px;
     ul {
@@ -42,13 +42,13 @@
     }
     li {
         display: inline-block;
-        color: $dark-gray;
+        color: $puc-header-menu-text-color;
         line-height: 50px;
         padding: 0 15px;
         &:first-child {
             font-size: 24px;
             float: left;
-            background-image: url('/doc/img/dropdown_down_arrow_black.png');
+            background: $puc-header-menu-arrow;
             background-position: right center;
             background-repeat: no-repeat;
             padding-right: 25px;
@@ -56,7 +56,7 @@
         &:last-child {
             float: right;
             font-size: 18px;
-            background-image: url('/doc/img/dropdown_down_arrow_black.png');
+            background-image: $puc-header-menu-icon;
             background-position: right center;
             background-repeat: no-repeat;
             padding-right: 25px;

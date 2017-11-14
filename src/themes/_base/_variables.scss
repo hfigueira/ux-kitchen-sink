@@ -1,8 +1,38 @@
-$main-color: #cc0000 !default;
-$secondary-color: #7C0B2B !default;
+// COLOR PALETTE
+// monochrome colors
 $white: #ffffff !default;
-$tertiary-color: #FF312E !default;
-$primary-hover-color: #F1CCCC !default;
+$super-light-gray: #FDFDFD !default;
 $light-gray:#F8F8F8 !default;
 $medium-gray:#E0E0E0 !default;
+$gray: #CCCCCC !default;
+$medium-dark-gray: #666666 !default;
 $dark-gray:#414141 !default;
+// bright colors
+$super-light-red: #F1CCCC !default;
+$light-red: #FF312E !default;
+$red: #cc0000 !default;
+$dark-red: #7C0B2B !default;
+$light-blue: #E6EFF6 !default;
+$blue: #005DA6 !default;
+$dark-blue: #0F2B5B !default;
+
+/*
+*
+*
+*/
+
+// Functional Variables
+$primary-color: $red !default;
+$secondary-color: $dark-red !default;
+$tertiary-color: $light-red !default;
+$quaternary-color: $super-light-red !default;
+$primary-hover-color: $super-light-red !default;
+$secondary-hover-color: $red !default;
+$tertiary-hover-color: $dark-red !default;
+$quaternary-hover-color: $red !default;
+$text-light-color: $white !default;
+$text-dark-color: $dark-gray !default;
+$primary-disabled-color: $medium-gray !default;
+$secondary-disabled-color: $medium-dark-gray !default;
+$tertiary-disabled-color: $light-gray !default;
+$quaternary-disabled-color: $super-light-gray !default;

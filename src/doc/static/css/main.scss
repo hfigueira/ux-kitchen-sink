@@ -7,7 +7,7 @@ $light-gray: rgb(241, 241, 241);
 $ultra-light-gray: rgb(245, 246, 247);
 $red: rgb(203, 0, 0);
 $border: 1px solid $light-gray;
-$hover-main-color: rgba(204, 0, 0, .2);
+$hover-primary-color: rgba(204, 0, 0, .2);
 * {
     box-sizing: border-box;
 }
@@ -104,7 +104,7 @@ p {
                 line-height: 2em;
                 padding: 0 30px;
                 &:hover {
-                    background-color: $hover-main-color;
+                    background-color: $hover-primary-color;
                 }
             }
             a {
@@ -112,7 +112,7 @@ p {
                 text-decoration: none;
                 text-transform: capitalize;
                 .active {
-                    background-color: $hover-main-color;
+                    background-color: $hover-primary-color;
                 }
             }
         }

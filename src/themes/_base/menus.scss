@@ -24,12 +24,12 @@
     font-size: 13px;
     list-style: none;
     &:hover {
-        background-color: $main-color;
+        background-color: $primary-color;
         color: #FFF;
         cursor: default;
     }
     &.selected {
-        background-color: $main-color;
+        background-color: $primary-color;
         color: #FFF;
         cursor: default;
         background-image: url('/doc/img/dropdown_right_arrow_white.png');
@@ -114,6 +114,6 @@ li.top-menu-list-item+.selected {
 .icon-viz-picker {
     height: 40px;
     width: 40px;
-    border: 1px solid $main-color;
+    border: 1px solid $primary-color;
     margin-left: 160px;
 }

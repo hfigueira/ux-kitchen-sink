@@ -1,7 +1,35 @@
-$main-color: #cc0000;
-$secondary-color: #7C0B2B;
-$tertiary-color: #FF312E;
-$primary-hover-color: #F1CCCC;
+// General Colors
+$white: #ffffff;
+$super-light-gray: #FDFDFD;
 $light-gray:#F8F8F8;
 $medium-gray:#E0E0E0;
+$gray: #CCCCCC;
+$medium-dark-gray: #666666;
 $dark-gray:#414141;
+$super-light-red: #F1CCCC;
+$light-red: #FF312E;
+$red: #cc0000;
+$dark-red: #7C0B2B;
+//
+// Functional Variables
+$primary-color: $red;
+$secondary-color: $dark-red;
+$tertiary-color: $super-light-red;
+$quaternary-color: $light-red;
+$text-light-color: $white;
+$text-dark-color: $dark-gray;
+//
+//
+//
+//
+//
+// ------------- THEME VARIABLES -------------
+//
+// BUTTONS
+//
+//
+// LISTS
+$list-primary-selected-background-color: $tertiary-color;
+$list-primary-selected-text-color: $text-dark-color;
+//
+//

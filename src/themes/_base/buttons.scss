@@ -8,39 +8,39 @@
 }
 
 // Buttons outline
-.btn-primary.filled {
+.btn-primary.outline {
     background-color: $primary-button-background-color;
-    border: 1px solid $primary-button-background-color;
-    color: $primary-button-color;
+    border: 1px solid $primary-button-border-color;
+    color: $primary-button-text-color;
     &:hover,
     &.hover {
-        background-color: $primary-button-hover-color;
-        border-color: $primary-button-hover-color;
-        color: $primary-button-color;
+        background-color: $primary-button-hover-background-color;
+        border-color: $primary-button-hover-border-color;
+        color: $primary-button-hover-text-color;
     }
     &:disabled {
-        background-color: $disabled-background-color;
-        border-color: $disabled-background-color;
-        color: $disabled-color;
+        background-color: $primary-button-disabled-background-color;
+        border-color: $primary-button-disabled-background-color;
+        color: $primary-button-disabled-text-color;
         cursor: not-allowed;
     }
 }
 
 // Buttons filled
-.btn-primary.outline {
-    background-color: $white;
-    border: 1px solid $primary-button-background-color;
-    color: $primary-button-background-color;
+.btn-primary.filled {
+    background-color: $secondary-button-background-color;
+    border: 1px solid $secondary-button-border-color;
+    color: $secondary-button-text-color;
     &:hover,
     &.hover {
-        background-color: $primary-button-background-color;
-        border-color: $primary-button-background-color;
-        color: $primary-button-color;
+        background-color: $secondary-button-hover-background-color;
+        border-color: $secondary-button-hover-border-color;
+        color: $secondary-button-hover-text-color;
     }
     &:disabled {
-        background-color: $disabled-background-color;
-        border-color: $disabled-background-color;
-        color: $disabled-color;
+        background-color: $primary-button-disabled-background-color;
+        border-color: $primary-button-disabled-background-color;
+        color: $primary-button-disabled-text-color;
         cursor: not-allowed;
     }
 }
@@ -48,8 +48,8 @@
 // Button group
 .btn-group {
     font-size: 0;
-    border: 1px solid $main-color;
-    color: $main-color;
+    border: 1px solid $primary-button-border-color;
+    color: $primary-color;
     border-radius: 4px;
     display: inline-block;
     margin: 10px;
@@ -57,7 +57,7 @@
         font-size: 14px;
         line-height: 1em;
         padding: 10px 20px;
-        color: $main-color;
+        color: $primary-button-border-color;
         white-space: nowrap;
         text-align: center;
         margin: 0;
@@ -70,10 +70,10 @@
             background: url("/doc/img/check.png");
             background-repeat: no-repeat;
             background-position: left 8px center;
-            background-color: $main-color;
+            background-color: $primary-button-border-color;
         }
         &:hover {
-            background-color: $main-color;
+            background-color: $primary-button-border-color;
             color: #FFF;
         }
         &:first-child {
@@ -105,11 +105,11 @@
         margin-left: -1px;
         vertical-align: top;
         &.selected {
-            border-bottom: 3px solid $main-color;
-            color: $main-color;
+            border-bottom: 3px solid $primary-button-border-color;
+            color: $primary-button-border-color;
         }
         &:hover {
-            color: $dark-gray;
+            color: $list-primary-text-color;
         }
         &:first-child {
             border-radius: 4px 0 0 4px;

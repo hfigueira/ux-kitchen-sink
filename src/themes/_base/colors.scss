@@ -1,5 +1,5 @@
 // COLORS
-.background-color-container {
+.color-container {
     height: 100px;
     width: 100px;
     display: inline-block;
@@ -8,18 +8,18 @@
     color: $white;
 }
 
-.background-color-container {
+.color-container {
     &.primary-color {
-        background-color: $main-color;
+        background-color: $primary-color;
     }
     &.secondary-color {
         background-color: $secondary-color;
     }
-    &.primary-hover-color {
-        background-color: $primary-hover-color;
-    }
     &.tertiary-color {
         background-color: $tertiary-color;
+    }
+    &.quaternary-color {
+        background-color: $quaternary-color;
     }
     &.light-gray {
         color: $dark-gray;
