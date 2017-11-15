@@ -15,6 +15,7 @@ li {
     font-size: 14px;
     &:hover {
         background-color: $list-primary-hover-background-color;
+        color: $list-primary-hover-text-color;
     }
     &.selected {
         background-color: $list-primary-selected-background-color;

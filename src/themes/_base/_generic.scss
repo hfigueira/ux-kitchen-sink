@@ -30,7 +30,7 @@ $puc-bottom-header-background-color: $light-gray !default;
 $puc-bottom-header-background-hover-color: $primary-color !default;
 $puc-header-text-color: $dark-gray !default;
 $puc-header-menu-text-color: $dark-gray !default;
-$puc-header-menu-arrow: url('/doc/img/dropdown_down_arrow_black.png') !default;
+$puc-header-menu-icon: url('/doc/img/dropdown_down_arrow_black.png') !default;
 //
 //
 // LISTS ---------------------------------------------
@@ -40,3 +40,39 @@ $list-primary-text-color: $dark-gray !default;
 $list-primary-hover-background-color: $medium-gray !default;
 $list-primary-selected-background-color: $primary-hover-color !default;
 $list-primary-selected-text-color: $dark-gray !default;
+$list-primary-hover-text-color: $white !default;
+//
+//
+// LOADING ---------------------------------------------
+$loading-image-spinner: url('/doc/img/loading-ruby.gif') !default;
+$loading-message-text-color: $medium-dark-gray !default;
+$loading-message-background-color: $white !default;
+$loading-message-border-color: $medium-gray !default;
+//
+//
+// MENUS ---------------------------------------------
+// Contextual menu
+$top-menu-container-background-color: $white !default;
+$top-menu-container-border-color: $gray !default;
+$top-menu-container-list-background-hover-color: $primary-color !default;
+$top-menu-container-list-text-hover-color: $white !default;
+$top-menu-container-list-background-selected-color: $primary-color !default;
+$top-menu-container-list-text-selected-color: $white !default;
+$top-menu-container-list-text-disabled-color: $gray !default;
+$top-menu-container-list-background-disabled-color: $white !default;
+$top-menu-container-list-separator-border-color: $gray !default;
+// Flyout menu
+$flyout-menu-container-background-color: $white !default;
+$flyout-menu-container-border-color: $medium-gray !default;
+$flyout-menu-container-list-text-color: $dark-gray !default;
+$flyout-menu-container-list-background-hover-color: $medium-gray !default;
+$flyout-menu-container-list-text-hover-color: $dark-gray !default;
+$flyout-menu-container-list-background-selected-color: $tertiary-color !default;
+$flyout-menu-container-list-text-selected-color: $dark-gray !default;
+$flyout-menu-container-list-background-disabled-color: transparent !default;
+$flyout-menu-container-list-text-disabled-color: $medium-gray !default;
+$flyout-menu-container-icon-border-color: $primary-color !default;
+//
+//
+// NAVIGATION ---------------------------------------------
+// Perspective control

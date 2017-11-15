@@ -1,9 +1,9 @@
 // FILE MENU
 .top-menu-container {
-    background-color: #FFF;
+    background-color: $top-menu-container-background-color;
+    border: 1px solid $top-menu-container-border-color;
     margin-top: 0px;
     margin-left: 0px;
-    border: 1px solid #CCC;
     border-spacing: 0;
     padding: 0;
     max-width: 200px;
@@ -24,19 +24,19 @@
     font-size: 13px;
     list-style: none;
     &:hover {
-        background-color: $primary-color;
-        color: #FFF;
+        background-color: $top-menu-container-list-background-hover-color;
+        color: $top-menu-container-list-text-hover-color;
         cursor: default;
     }
     &.selected {
-        background-color: $primary-color;
-        color: #FFF;
+        background-color: $top-menu-container-list-background-selected-color;
+        color: $top-menu-container-list-text-selected-color;
         cursor: default;
         background-image: url('/doc/img/dropdown_right_arrow_white.png');
     }
     &.disabled {
-        color: #CCCCCC;
-        background-color: transparent;
+        color: $top-menu-container-list-text-disabled-color;
+        background-color: $top-menu-container-list-background-disabled-color;
     }
 }
 
@@ -60,26 +60,25 @@ li.top-menu-list-item+.selected {
 
 .menu-item-separator {
     padding: 0;
-    border-top: 3px solid #FFF;
-    border-bottom: 3px solid #FFF;
+    margin-top: 3px;
+    margin-bottom: 3px;
     height: 1px;
     width: 100%;
 }
 
 .menu-item-separator>.menu-separator-inner {
-    border-top: 1px solid #CCC;
+    border-top: 1px solid $top-menu-container-list-separator-border-color;
 }
 
 // FLYOUT MENU
 .flyout-menu {
-    background-color: #FFF;
-    border: 1px solid #CCC;
+    background-color: $flyout-menu-container-background-color;
+    border: 1px solid $flyout-menu-container-border-color;
     border-spacing: 0;
+    border-radius: 4px;
     max-width: 200px;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .flyout-menu ul {
@@ -89,31 +88,31 @@ li.top-menu-list-item+.selected {
 }
 
 .flyout-menu li {
-    color: #333;
+    color: $flyout-menu-container-list-text-color;
     font-size: 14px;
     line-height: 26px;
     list-style: none;
     padding: 0 10px;
     margin: 0;
     &:hover {
-        background-color: $medium-gray;
-        color: $dark-gray;
+        background-color: $flyout-menu-container-list-background-hover-color;
+        color: $flyout-menu-container-list-text-hover-color;
         cursor: default;
     }
     &.selected {
-        background-color: $primary-hover-color;
-        color: $dark-gray;
+        background-color: $flyout-menu-container-list-background-selected-color;
+        color: $flyout-menu-container-list-text-selected-color;
         cursor: default;
     }
     &.disabled {
-        color: #CCCCCC;
-        background-color: transparent;
+        color: $flyout-menu-container-list-text-disabled-color;
+        background-color: $flyout-menu-container-list-background-disabled-color;
     }
 }
 
 .icon-viz-picker {
+    border: 1px solid $flyout-menu-container-icon-border-color;
     height: 40px;
     width: 40px;
-    border: 1px solid $primary-color;
     margin-left: 160px;
 }

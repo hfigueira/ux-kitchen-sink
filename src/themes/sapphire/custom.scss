@@ -26,7 +26,7 @@ $text-dark-color: $dark-gray;
 //
 // ------------- THEME VARIABLES -------------
 //
-// BUTTONS
+// ------------- BUTTONS --------------
 // Primary button
 $primary-button-background-color: $primary-color;
 $primary-button-hover-background-color: $secondary-color;
@@ -39,7 +39,7 @@ $secondary-button-text-color: $primary-color;
 $secondary-button-hover-text-color: $white;
 //
 //
-// HEADERS
+//  ------------- HEADERS -------------
 // PUC header
 $puc-top-header-background-color: $secondary-color;
 $puc-top-header-border: 0;
@@ -50,9 +50,22 @@ $puc-header-text-color: $white;
 $puc-header-menu-icon: url('/doc/img/dropdown_down_arrow_white.png');
 //
 //
-//
-// LISTS
+//  ------------- LISTS ---------------
 $list-primary-selected-background-color: $primary-hover-color;
 $list-primary-selected-text-color: $text-light-color;
 $list-primary-text-color: $text-dark-color;
-$list-primary-hover-background-color: $tertiary-color;
+$list-primary-hover-background-color: $primary-color;
+$list-primary-hover-text-color: $text-light-color;
+//
+//
+//  ------------- LOADING -------------
+$loading-image-spinner: url('/doc/img/loading-sapphire.gif');
+$loading-message-text-color: $medium-dark-gray;
+//
+//
+//  ------------- MENUS ---------------
+// Flyout menu
+$flyout-menu-container-list-background-hover-color: $primary-color;
+$flyout-menu-container-list-text-hover-color: $white;
+$flyout-menu-container-list-background-selected-color: $secondary-color;
+$flyout-menu-container-list-text-selected-color: $white;

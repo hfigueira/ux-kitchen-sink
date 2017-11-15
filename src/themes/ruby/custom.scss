@@ -31,5 +31,9 @@ $text-dark-color: $dark-gray;
 // LISTS
 $list-primary-selected-background-color: $tertiary-color;
 $list-primary-selected-text-color: $text-dark-color;
+$list-primary-hover-text-color: $dark-gray;
 //
 //
+// LOADING
+$loading-image-spinner: url('/doc/img/loading-ruby.gif');
+$loading-message-text-color: $medium-dark-gray;
