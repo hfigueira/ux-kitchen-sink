@@ -1,14 +1,13 @@
 // BUTTONS
 .btn {
-    color: $white;
     padding: 10px 20px;
     font-size: 0.875em;
     line-height: 1em;
     border-radius: 4px;
 }
 
-// Buttons outline
-.btn-primary.outline {
+// Primary button
+.btn-primary {
     background-color: $primary-button-background-color;
     border: 1px solid $primary-button-border-color;
     color: $primary-button-text-color;
@@ -26,8 +25,8 @@
     }
 }
 
-// Buttons filled
-.btn-primary.filled {
+// Secondary button
+.btn-secondary {
     background-color: $secondary-button-background-color;
     border: 1px solid $secondary-button-border-color;
     color: $secondary-button-text-color;
@@ -47,33 +46,34 @@
 
 // Button group
 .btn-group {
+    border: 1px solid $button-group-border-color;
+    color: $button-group-text-color;
     font-size: 0;
-    border: 1px solid $primary-button-border-color;
-    color: $primary-color;
     border-radius: 4px;
     display: inline-block;
     margin: 10px;
     >.btn {
+        color: $primary-button-text-color;
+        background-color: $button-group-background-color;
         font-size: 14px;
         line-height: 1em;
         padding: 10px 20px;
-        color: $primary-button-border-color;
         white-space: nowrap;
         text-align: center;
         margin: 0;
         border-radius: 0;
         border: 0;
         &.selected {
+            background-color: $button-group-background-selected-color;
+            background-image: $button-group-background-selected-icon;
             border-left: 1px solid $white;
             border-right: 1px solid $white;
             color: $white;
-            background: url("/doc/img/check.png");
             background-repeat: no-repeat;
             background-position: left 8px center;
-            background-color: $primary-button-border-color;
         }
         &:hover {
-            background-color: $primary-button-border-color;
+            background-color: $button-group-background-selected-hover-color;
             color: #FFF;
         }
         &:first-child {

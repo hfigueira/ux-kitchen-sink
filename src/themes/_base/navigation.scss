@@ -1,6 +1,6 @@
 // PERSPECTIVE CONTROL
 .perspective-control {
-    border: 1px solid #CCC;
+    border: 1px solid $perspective-control-border-color;
     box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, .2);
     font-family: 'Open Sans', Helvetica, Arial, Sans serif;
     font-weight: 100;
@@ -19,31 +19,34 @@
     list-style: none;
     padding: 8px 5px 8px 10px;
     &:first-child {
+        background-color: $perspective-control-list-background-color;
         font-size: 24px;
         padding: 15px 10px 20px;
-        background-color: transparent;
     }
     &:first-child:hover {
-        background: transparent;
+        background: $perspective-control-list-background-color;
+        color: $flyout-menu-container-list-text-selected-color;
         cursor: default;
     }
     &.selected,
     &.selected:hover {
-        background-color: $primary-hover-color;
+        background-color: $perspective-control-list-background-selected-color;
+        color: $perspective-control-list-text-selected-color;
     }
     &:hover {
-        background-color: $list-primary-hover-background-color;
-        color: #414141;
+        background-color: $perspective-control-list-background-hover-color;
+        color: $perspective-control-list-text-hover-color;
     }
     &.disabled {
-        color: #CCCCCC;
+        background-color: $perspective-control-list-background-disabled-color;
+        color: $perspective-control-list-text-disabled-color;
     }
     &.disabled:hover {
-        background-color: #FFFFFF;
+        background-color: $perspective-control-list-background-disabled-hover-color;
         cursor: default;
     }
     &.active {
-        background-color: $white;
+        background-color: $perspective-control-list-background-active-color;
     }
     &.active::after {
         content: "";
@@ -61,7 +64,7 @@
 
 // USER CONTROL
 .user-control {
-    border: 1px solid #CCC;
+    border: 1px solid $user-control-border-color;
     box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, .2);
     font-family: 'Open Sans', Helvetica, Arial, Sans serif;
     font-weight: 100;
@@ -80,23 +83,20 @@
     list-style: none;
     padding: 8px 5px 8px 10px;
     &:first-child {
+        background-color: $user-control-list-background-active-color;
         font-size: 24px;
         padding: 15px 10px 20px;
-        background-color: transparent;
     }
     &:first-child:hover {
-        background: transparent;
+        background: $user-control-list-background-active-color;
         cursor: default;
     }
     &.active {
-        background-color: $primary-hover-color;
+        background-color: $user-control-list-background-active-color;
     }
     &:hover {
-        background-color: $list-primary-hover-background-color;
+        background-color: $user-control-list-background-hover-color;
         color: #414141;
-    }
-    &.active {
-        background-color: $white;
     }
     &.active::after {
         content: "";

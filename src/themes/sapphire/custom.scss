@@ -29,14 +29,25 @@ $text-dark-color: $dark-gray;
 // ------------- BUTTONS --------------
 // Primary button
 $primary-button-background-color: $primary-color;
+$primary-button-border-color: $primary-color;
 $primary-button-hover-background-color: $secondary-color;
+$primary-button-hover-border-color: $secondary-color;
 $primary-button-text-color: $white;
 // Secondary button
 $secondary-button-background-color: $white;
 $secondary-button-border-color: $primary-color;
-$secondary-button-hover-background-color: $primary-color;
 $secondary-button-text-color: $primary-color;
+$secondary-button-hover-background-color: $primary-color;
+$secondary-button-hover-border-color: $primary-color;
 $secondary-button-hover-text-color: $white;
+// Button group
+$button-group-background-color: $primary-color;
+$button-group-border-color: $primary-color;
+$button-group-text-color: $white;
+$button-group-background-selected-color: $secondary-color;
+$button-group-background-hover-color: $primary-color;
+$button-group-background-selected-hover-color: $secondary-color;
+$button-group-background-selected-icon: none;
 //
 //
 //  ------------- HEADERS -------------
@@ -66,6 +77,11 @@ $loading-message-text-color: $medium-dark-gray;
 //  ------------- MENUS ---------------
 // Flyout menu
 $flyout-menu-container-list-background-hover-color: $primary-color;
-$flyout-menu-container-list-text-hover-color: $white;
 $flyout-menu-container-list-background-selected-color: $secondary-color;
-$flyout-menu-container-list-text-selected-color: $white;
+$flyout-menu-container-list-text-hover-color: $white;
+$flyout-menu-container-list-text-selected-color: $dark-gray;
+// Perspective menu
+$perspective-control-list-background-selected-color: $secondary-color;
+$perspective-control-list-background-hover-color: $primary-color;
+$perspective-control-list-text-hover-color: $white;
+$perspective-control-list-text-selected-color: $white;

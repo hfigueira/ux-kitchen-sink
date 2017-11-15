@@ -1,8 +1,9 @@
+// TABLES
 table.table-container {
     user-select: none;
     margin: 0;
     padding: 0;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $table-container-border-color;
     border-bottom: 0;
     border-spacing: 0;
     table-layout: fixed;
@@ -10,15 +11,15 @@ table.table-container {
 }
 
 table.table-container th {
+    background-color: $table-container-header-background-color;
+    color: $table-container-header-text-color;
+    border-right: 1px solid $table-container-header-border-right-color;
     text-align: left;
     font-size: 12px;
     border-spacing: 0;
     padding: 10px;
     line-height: 18px;
     font-weight: normal;
-    background-color: #999999;
-    color: #FFFFFF;
-    border-right: 1px solid #e0e0e0;
     &:first-child::after {
         content: "";
         display: inline-block;
@@ -33,15 +34,15 @@ table.table-container th {
 }
 
 table.table-container td {
+    border-right: 1px solid $table-container-data-border-right-color;
+    border-bottom: 1px solid $table-container-data-border-bottom-color;
+    color: $table-container-data-text-color;
     text-align: left;
     min-width: 100px;
     font-size: 12px;
     border-spacing: 0;
     padding: 4px 10px;
     font-weight: normal;
-    border-right: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    color: #333333;
     &:last-child {
         border-right: 0;
     }
@@ -52,14 +53,14 @@ table.table-container tr {
         border-bottom: 0;
     }
     &:nth-child(odd) {
-        background-color: #F0F0F0;
+        background-color: $table-container-row-odd-background-color;
     }
     &:hover {
-        background: #E0E0E0;
-        color: #414141;
+        background: $table-container-row-background-hover-color;
+        color: $table-container-row-text-hover-color;
         cursor: pointer;
     }
     &.active {
-        background-color: $primary-hover-color;
+        background-color: $table-container-row-background-active-color;
     }
 }

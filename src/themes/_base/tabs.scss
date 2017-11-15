@@ -1,5 +1,5 @@
 .tab-content {
-    border: 1px solid #ccc;
+    border: 1px solid $tabs-content-border-color;
     min-height: 300px;
     margin-top: -1px;
 }
@@ -15,13 +15,15 @@
 }
 
 .tab-selector li {
+    color: $tabs-selector-list-item-text-color;
+    background: $tabs-selector-list-background-color;
+    border-top: 4px solid $tabs-selector-list-item-border-top-color;
+    border-right: 1px solid $tabs-selector-list-item-border-right-color;
+    border-bottom: 1px solid $tabs-selector-list-item-border-bottom-color;
+    border-left: 1px solid $tabs-selector-list-item-border-left-color;
     display: inline-block;
     list-style: none;
-    border: 1px solid transparent;
-    border-top: 4px solid transparent;
     padding: 6px 15px;
-    background: transparent;
-    color: #999;
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
@@ -31,14 +33,14 @@
 }
 
 .tab-selector li.active {
-    border-left: 1px solid #CCC;
-    border-right: 1px solid #CCC;
-    border-bottom: 1px solid #FFF;
-    border-top: 4px solid $primary-color;
+    border-top: 4px solid $tabs-selector-list-active-border-top-color;
+    border-right: 1px solid $tabs-selector-list-active-border-right-color;
+    border-bottom: 1px solid $tabs-selector-list-active-border-bottom-color;
+    border-left: 1px solid $tabs-selector-list-active-border-left-color;
     color: $primary-color;
 }
 
 .tab-selector li:hover {
-    color: $primary-color;
+    color: $tabs-selector-list-item-text-hover-color;
     cursor: pointer;
 }

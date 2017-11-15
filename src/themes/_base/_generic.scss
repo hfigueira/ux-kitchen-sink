@@ -8,8 +8,8 @@ $primary-button-text-color: $primary-color !default;
 $primary-button-hover-text-color: $white !default;
 // Secondary button
 $secondary-button-background-color: $primary-color !default;
-$secondary-button-hover-background-color: $secondary-color !default;
 $secondary-button-border-color: $primary-color !default;
+$secondary-button-hover-background-color: $secondary-color !default;
 $secondary-button-hover-border-color: $secondary-color !default;
 $secondary-button-text-color: $white !default;
 $secondary-button-hover-text-color: $white !default;
@@ -20,6 +20,14 @@ $primary-button-disabled-border-color: $primary-disabled-color !default;
 $primary-button-disabled-hover-border-color: $primary-color !default;
 $primary-button-disabled-text-color: $secondary-disabled-color !default;
 $primary-button-disabled-hover-text-color: $secondary-disabled-color !default;
+// Button group
+$button-group-background-color: $white !default;
+$button-group-border-color: $primary-color !default;
+$button-group-text-color: $primary-color !default;
+$button-group-background-selected-color: $primary-color !default;
+$button-group-background-hover-color: $primary-color !default;
+$button-group-background-selected-hover-color: $primary-color !default;
+$button-group-background-selected-icon: url("/doc/img/check.png") !default;
 //
 //
 // HEADERS ---------------------------------------------
@@ -76,3 +84,48 @@ $flyout-menu-container-icon-border-color: $primary-color !default;
 //
 // NAVIGATION ---------------------------------------------
 // Perspective control
+$perspective-control-border-color: $medium-gray !default;
+$perspective-control-list-background-color: $white !default;
+$perspective-control-list-background-hover-color: $medium-gray !default;
+$perspective-control-list-background-selected-color: $tertiary-color !default;
+$perspective-control-list-background-active-color: $white !default;
+$perspective-control-list-background-disabled-color: $white !default;
+$perspective-control-list-background-disabled-hover-color: $white !default;
+$perspective-control-list-text-selected-color: $dark-gray !default;
+$perspective-control-list-text-active-color: $dark-gray !default;
+$perspective-control-list-text-hover-color: $dark-gray !default;
+$perspective-control-list-text-disabled-color: $gray !default;
+// User control
+$user-control-border-color: $medium-gray !default;
+$user-control-list-background-active-color: $white !default;
+$user-control-list-background-hover-color: $medium-gray !default;
+//
+//
+// TABLES ---------------------------------------------
+$table-container-border-color: $medium-gray !default;
+$table-container-header-background-color: $medium-dark-gray !default;
+$table-container-header-text-color: $white !default;
+$table-container-header-border-right-color: $medium-gray !default;
+$table-container-header-border-color: $medium-gray !default;
+$table-container-data-border-right-color: $medium-gray !default;
+$table-container-data-border-bottom-color: $medium-gray !default;
+$table-container-data-text-color: $dark-gray !default;
+$table-container-row-odd-background-color: $light-gray !default;
+$table-container-row-background-hover-color: $medium-gray !default;
+$table-container-row-text-hover-color: $dark-gray !default;
+$table-container-row-background-active-color: $tertiary-color !default;
+//
+//
+// TABS ---------------------------------------------
+$tabs-content-border-color: $gray !default;
+$tabs-selector-list-item-text-color: $gray !default;
+$tabs-selector-list-item-text-hover-color: $primary-color !default;
+$tabs-selector-list-active-border-top-color: $primary-color !default;
+$tabs-selector-list-active-border-right-color: $gray !default;
+$tabs-selector-list-active-border-bottom-color: $white !default;
+$tabs-selector-list-active-border-left-color: $gray !default;
+$tabs-selector-list-background-color: $transparent !default;
+$tabs-selector-list-item-border-top-color: $transparent !default;
+$tabs-selector-list-item-border-right-color: $transparent !default;
+$tabs-selector-list-item-border-bottom-color: $transparent !default;
+$tabs-selector-list-item-border-left-color: $transparent !default;
