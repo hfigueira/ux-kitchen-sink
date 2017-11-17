@@ -1,4 +1,4 @@
-// colors
+// Colors
 $white: rgb(255, 255, 255);
 $gray: rgb(204, 204, 204);
 $ultra-dark-gray: #414141;
@@ -12,6 +12,13 @@ $hover-primary-color: rgba(204, 0, 0, .2);
     box-sizing: border-box;
 }
 
+// Media queries for responsiveness
+$break-xsmall: 576px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-xlarge: 1230px;
+// Template page styling
 html,
 body {
     margin: 0;
@@ -122,6 +129,12 @@ p {
         padding: 0 30px;
         .content-desc {
             padding: 100px 205px 0 250px;
+            box-sizing: content-box;
+            width: calc(100% - 455px);
+            @media screen and (min-width: $break-small) and (max-width: $break-xlarge) {
+                padding: 100px 0 0 250px;
+                width: calc(100% - 250px);
+            }
             hr {
                 border: 0;
                 height: 1px;
@@ -162,10 +175,13 @@ p {
     .col-right {
         width: 205px;
         height: 100%;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         border-left: $border;
         padding-top: 100px;
+        @media screen and (min-width: $break-xsmall) and (max-width: $break-xlarge) {
+            display: none;
+        }
     }
 }
