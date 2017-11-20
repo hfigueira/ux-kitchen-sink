@@ -30,6 +30,44 @@ $button-group-background-selected-hover-color: $primary-color !default;
 $button-group-background-selected-icon: url("/doc/img/check.png") !default;
 //
 //
+// DIALOGS ---------------------------------------------
+$dialog-container-background: $white !default;
+$dialog-container-border: $white !default;
+$dialog-title-text-color: $dark-gray !default;
+//
+//
+// FORM ELEMENTS -------------------------------------
+// Fieldset
+$fieldset-text-color: $medium-light-gray !default;
+$fieldset-border-color: $gray !default;
+// Text element
+$text-element-border-color: $medium-light-gray !default;
+$text-element-text-color: $dark-gray !default;
+// Radio button
+$radio-button-text-color: $dark-gray !default;
+$radio-button-background-default-color: $white !default;
+$radio-button-background-border-color: $primary-color !default;
+$radio-button-background-selected-color: $white !default;
+$radio-button-background-hover-color: $white !default;
+$radio-button-checkmark-default-color: $white !default;
+$radio-button-checkmark-border-color: $gray !default;
+$radio-button-checkmark-selected-color: $primary-color !default;
+$radio-button-checkmark-selected-border-color: $primary-color !default;
+$radio-button-checkmark-hover-color: $white !default;
+// Radio button
+$checkbox-button-text-color: $dark-gray !default;
+$checkbox-button-background-default-color: $white !default;
+$checkbox-button-background-border-color: $gray !default;
+$checkbox-button-background-selected-color: $primary-color !default;
+$checkbox-button-background-hover-border-color: $primary-color !default;
+$checkbox-button-background-hover-color: $white !default;
+$checkbox-button-checkmark-color: $white !default;
+// Droplist
+$droplist-background-color: $white !default;
+$droplist-text-color: $dark-gray !default;
+$droplist-border-color: $medium-light-gray !default;
+//
+//
 // HEADERS ---------------------------------------------
 // PUC Header
 $puc-top-header-background-color: $light-gray !default;

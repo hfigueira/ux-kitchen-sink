@@ -18,6 +18,11 @@
         height: 60px;
         width: 60px;
     }
+    .center {
+        // Just to center align the button
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 // LOADING MESSAGE

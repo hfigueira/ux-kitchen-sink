@@ -67,6 +67,7 @@ p {
     height: 100%;
     .col-left {
         border-right: $border;
+        background-color: $white;
         width: 250px;
         position: fixed;
         top: 100px;
@@ -135,6 +136,10 @@ p {
                 padding: 100px 0 0 250px;
                 width: calc(100% - 250px);
             }
+            pre {
+                word-wrap: break-word;
+                white-space: pre-wrap;
+            }
             hr {
                 border: 0;
                 height: 1px;
@@ -173,6 +178,7 @@ p {
         }
     }
     .col-right {
+        background-color: $white;
         width: 205px;
         height: 100%;
         position: fixed;
