@@ -153,7 +153,7 @@ Now let’s learn how to write the documentation for the new component.
 
 Since we take advantage of [Markdown](https://github.com/adam-p/markdown-here), it’s quite easy to understand and write the documentation of each component - learn how [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-To add the descriptions to the new component, go back to your buttons.md file you created on the first chapter. Then add the following:
+To add the descriptions to the new component, go back to your `buttons.md` file you created on the first chapter. Then add the following:
 
 ```markdown
 ---
@@ -171,7 +171,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 You are free to change it as you wish, with the many details you want. 
 
-Remember, if you want to show the structure of the component in your documentation page, don’t forget to add the last line of code that’s being shown there - that’s being included in the buttons.html as well, wrapping the component with <div id=“impl-primary-buttons”>
+Remember, if you want to show the structure of the component in your documentation page, don’t forget to add the last line of code that’s being shown there - that’s being included in the `buttons.html` as well, wrapping the component with <div id=“impl-primary-buttons”>
 
 
 ***
@@ -212,7 +212,8 @@ $blue: #005DA6;
 $primary-color: $blue !default;
 (…)
 ```
-Now, every component that uses the $primary-blue as variable will show the blue as its primary-color.
+
+Now, every component that uses the `$primary-blue` as variable will show the **blue** as its primary-color.
 
 ***
 
