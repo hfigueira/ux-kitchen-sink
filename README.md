@@ -189,9 +189,12 @@ Let’s call this new theme *"sapphire"*.
 - Inside this folder, add two new files:
   - `custom.scss` - where we will include the variables and values that will overwrite the default ones in the `_base` folder;
   - `_.scss` - this is where we will include our base (default) `_.scss` file and import our `custom.scss` file to overwrite the default variables, like:
-	
+
+```
 	@import "custom.scss";
 	@import "../_base/_.scss";
+```
+
 
 The `custom.scss` is where we will add our variables and its new values.
 
