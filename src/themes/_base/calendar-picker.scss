@@ -11,8 +11,8 @@ input.date-input {
     border-radius: 4px;
     box-sizing: border-box;
     color: #666;
-    background: url("/doc/img/calendar-white.png"), -webkit-linear-gradient(right, $primary-color, $primary-color 30%, transparent 30%, transparent 100%);
-    background: url("/doc/img/calendar-white.png"), linear-gradient(to left, $primary-color, $primary-color 30%, transparent 30%, transparent 100%);
+    background: url("/doc/images/calendar-white.png"), -webkit-linear-gradient(right, $primary-color, $primary-color 30%, transparent 30%, transparent 100%);
+    background: url("/doc/images/calendar-white.png"), linear-gradient(to left, $primary-color, $primary-color 30%, transparent 30%, transparent 100%);
     background-repeat: no-repeat;
     background-position: 90% 47%;
     &:focus,

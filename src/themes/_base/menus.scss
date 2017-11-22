@@ -32,7 +32,7 @@
         background-color: $top-menu-container-list-background-selected-color;
         color: $top-menu-container-list-text-selected-color;
         cursor: default;
-        background-image: url('/doc/img/dropdown_right_arrow_white.png');
+        background-image: url('/doc/images/dropdown_right_arrow_white.png');
     }
     &.disabled {
         color: $top-menu-container-list-text-disabled-color;
@@ -41,7 +41,7 @@
 }
 
 li.top-menu-list-item+.selected {
-    background-image: url('/doc/img/dropdown_right_arrow_white.png');
+    background-image: url('/doc/images/dropdown_right_arrow_white.png');
 }
 
 .top-menu-container+.sub-menu {
@@ -50,11 +50,11 @@ li.top-menu-list-item+.selected {
 }
 
 .top-menu-container .top-menu-list-arrow {
-    background-image: url('/doc/img/dropdown_right_arrow_black.png');
+    background-image: url('/doc/images/dropdown_right_arrow_black.png');
     background-position: right center;
     background-repeat: no-repeat;
     &:hover {
-        background-image: url('/doc/img/dropdown_right_arrow_white.png');
+        background-image: url('/doc/images/dropdown_right_arrow_white.png');
     }
 }
 
