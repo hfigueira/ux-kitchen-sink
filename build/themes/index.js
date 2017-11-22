@@ -2,7 +2,7 @@ import fs from "fs-extra";
 import sass from "node-sass";
 import config from "../config.json";
 
-const themesPath = config.themes.path;
+const themesPath = config.themes.srcPath;
 const themesOutputPath = config.themes.outputPath;
 
 const build = () => {

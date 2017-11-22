@@ -26,4 +26,8 @@ export const changeTheme = () => {
   location.reload();
 };
 
+export const navigateTo = () => {
+  console.log("> Navigate");
+};
+
 init();
