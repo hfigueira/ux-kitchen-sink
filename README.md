@@ -25,7 +25,7 @@ This project was created as POC for a UI Kitchen Sink documentation website, sho
 
 ## Installation
 
-Clone the project from GitHub into a local folder. Then go to the folder and run the following command:
+Clone the project from GitHub into a local folder. Make sure you have [NodeJS](https://nodejs.org/en/) installed before continuing. Then go to the folder and run the following command:
 
 	npm install
 
@@ -37,7 +37,7 @@ This will run locally and makes usage of watchers that will look into the change
 
 **Note:** Since the project has no index, you should open an existing file, in order to see it run, like:
 
-	localhost:3002/doc/components/buttons.html
+	localhost:3000/doc/components/buttons.html
 
 
 ***
@@ -51,15 +51,15 @@ One thing to consider is the fact that we are using a build system, so there are
 
 - Inside `src` folder, we have two other folders, `doc` and `themes`:
   - The `doc` folder is where we will add the documentation to each of the components;
-  - The `themes` folder is where we are going to add our themes - and add the styling that will overwrite the default styles to the components;
+  - The `themes` folder is where we are going to add our themes - and add the styling that will overwrite the default styles of the components;
 			
 	Inside this last one, we have two main `.scss` files:
   	- `_variables.scss` - this is where we will add our main color palette and our functional variables using that same palette;
   	- `_generic.scss` - this is where we will add the generic variables, that will be overwritten by our themes.
 
-- Inside the `doc` folder we are going to see two other folders, `_components` and `static`:
-	- The `_components` folder is where all of our components will be, divided by folders for each component;
-	- The `static` folder is where our documentation site layout lives - the structure of the page - in this case, it’s the same page for all components.
+- Inside the `doc` folder we are going to see another folder, the `_components`. The `_components` folder is where all of our components will be, divided by folders for each component;
+	
+- The `build` folder is where our documentation site layout lives - the structure of the page - in this case, it’s the same page for all components.
 
 - The `dist` folder is our output, or the final product, lets say. We don’t need to change anything here, since it’s dynamic and automatically built.
 This last one is the folder that we are going to use to make it “live” if we want to publish it to a server and where all the compiled CSS files are (base stylesheet, themes and documentation).
@@ -74,7 +74,7 @@ This last one is the folder that we are going to use to make it “live” if we
 
 Lets say, for instance, that you want to add a new **buttons** component to the project:
 
-- Go to `_components` folder and create a new folder named “buttons”;
+- Go to `src` and then to `_components` folder. Then create a new folder named “buttons”;
 - Then, create a `buttons.html` file inside that same folder - this file will be the structure of the component you will create;
 - Finally, create a `buttons.md` file that same folder - this will be the file that feeds the documentation page on the website, using **Markdown**. I will cover that on another chapter.
 
