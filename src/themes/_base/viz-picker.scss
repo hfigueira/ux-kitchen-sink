@@ -1,289 +1,289 @@
 // VIZ PICKER
 .pen-det-viz-switcher {
-    height: 30px;
-    width: 190px;
+  height: 30px;
+  width: 190px;
 }
 
 .visualization-switcher-button {
-    background-color: #FFFFFF;
-    color: #212121;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px;
-    cursor: pointer;
-    height: 100%;
-    padding: 6px 0;
-    vertical-align: middle;
-    width: 100%;
-    font-size: 14px;
-    &:hover {
-        border: 1px solid #0F2B5B;
-    }
+  background-color: #ffffff;
+  color: #212121;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 100%;
+  padding: 6px 0;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 14px;
+  &:hover {
+    border: 1px solid #0f2b5b;
+  }
 }
 
 .visualization-switcher-button-label {
-    font-family: 'OpenSansRegular', sans serif;
-    font-size: 14px;
-    text-align: left;
-    line-height: 30px;
-    width: calc(100% - 66px);
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+  font-family: "OpenSansRegular", sans serif;
+  font-size: 14px;
+  text-align: left;
+  line-height: 30px;
+  width: calc(100% - 66px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .visualization-switcher-button-icon,
 .visualization-switcher-button-label {
-    margin-right: 10px;
-    position: relative;
-    float: left;
-    height: 30px;
+  margin-right: 10px;
+  position: relative;
+  float: left;
+  height: 30px;
 }
 
 .flat-table.visualization-switcher-button-icon {
-    background-image: url('/doc/images/table_small.svg');
-    background-repeat: no-repeat;
-    margin: 0 10px;
-    position: relative;
-    float: left;
-    height: 17px;
-    width: 17px;
+  background-image: url("/doc/images/table_small.svg");
+  background-repeat: no-repeat;
+  margin: 0 10px;
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 17px;
 }
 
 .visualization-switcher-button-chevron {
-    height: 6px;
-    width: 10px;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    float: right;
-    background-size: 32px 6px;
-    background: url(/doc/images/chevron_down.svg) repeat-x -11px;
+  height: 6px;
+  width: 10px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  float: right;
+  background-size: 32px 6px;
+  background: url(/doc/images/chevron_down.svg) repeat-x -11px;
 }
 
 .flat-table.visualization-switcher-button-icon:hover {
-    background-image: url('/doc/images/table_small.svg');
-    background-repeat: no-repeat;
-    margin: 0 10px;
-    position: relative;
-    float: left;
-    height: 17px;
-    width: 17px;
+  background-image: url("/doc/images/table_small.svg");
+  background-repeat: no-repeat;
+  margin: 0 10px;
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 17px;
 }
 
 .visualization-switcher-button:hover .visualization-switcher-button-chevron {
-    background-position-x: -22px;
+  background-position-x: -22px;
 }
 
 // Viz picker container
 .visualization-selector.container {
-    display: block;
-    border: 1px solid #F2F2F2;
-    max-width: 330px;
-    background-color: #fff;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
-    overflow: visible;
-    padding: 25px 0 0 25px;
+  display: block;
+  border: 1px solid #f2f2f2;
+  max-width: 330px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+  overflow: visible;
+  padding: 25px 0 0 25px;
 }
 
 .viz-picker-icon {
-    width: 32px;
-    height: 32px;
-    overflow: hidden;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 65px 32px;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 65px 32px;
 }
 
 .visual-models-row {
-    width: 100%;
-    margin-bottom: 25px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 .viz-picker-icon-container {
-    padding: 8px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid transparent;
-    display: inline-block;
-    margin-right: 20px;
-    &.selected {
-        background-color: white;
-        border: 1px solid #AAAAAA;
-        border-radius: 2px;
-        .visual-models-table {
-            background-position: 0 0;
-        }
-        .visual-models-pivottable {
-            background-position: 0 0;
-        }
-        .visual-models-bar {
-            background-position: 0 0;
-        }
-        .visual-models-stackedbar {
-            background-position: 0 0;
-        }
-        .visual-models-column {
-            background-position: 0 0;
-        }
-        .visual-models-stackedcolumn {
-            background-position: 0 0;
-        }
-        .visual-models-line {
-            background-position: 0 0;
-        }
-        .visual-models-area {
-            background-position: 0 0;
-        }
-        .visual-models-pie {
-            background-position: 0 0;
-        }
-        .visual-models-doughnut {
-            background-position: 0 0;
-        }
-        .visual-models-sunburst {
-            background-position: 0 0;
-        }
-        .visual-models-scatter {
-            background-position: 0 0;
-        }
-        .visual-models-bubble {
-            background-position: 0 0;
-        }
-        .visual-models-heatgrid {
-            background-position: 0 0;
-        }
-        .visual-models-geomap {
-            background-position: 0 0;
-        }
-        &:hover {
-            background-color: white;
-            border: 1px solid #AAAAAA;
-            cursor: default;
-        }
+  padding: 8px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin-right: 20px;
+  &.selected {
+    background-color: white;
+    border: 1px solid #aaaaaa;
+    border-radius: 2px;
+    .visual-models-table {
+      background-position: 0 0;
+    }
+    .visual-models-pivottable {
+      background-position: 0 0;
+    }
+    .visual-models-bar {
+      background-position: 0 0;
+    }
+    .visual-models-stackedbar {
+      background-position: 0 0;
+    }
+    .visual-models-column {
+      background-position: 0 0;
+    }
+    .visual-models-stackedcolumn {
+      background-position: 0 0;
+    }
+    .visual-models-line {
+      background-position: 0 0;
+    }
+    .visual-models-area {
+      background-position: 0 0;
+    }
+    .visual-models-pie {
+      background-position: 0 0;
+    }
+    .visual-models-doughnut {
+      background-position: 0 0;
+    }
+    .visual-models-sunburst {
+      background-position: 0 0;
+    }
+    .visual-models-scatter {
+      background-position: 0 0;
+    }
+    .visual-models-bubble {
+      background-position: 0 0;
+    }
+    .visual-models-heatgrid {
+      background-position: 0 0;
+    }
+    .visual-models-geomap {
+      background-position: 0 0;
     }
     &:hover {
-        border: 1px solid #99BEDB;
-        background-color: #E6EFF6;
-        border-radius: 2px;
-        .visual-models-table {
-            background-position: 0 0;
-        }
-        .visual-models-pivottable {
-            background-position: 0 0;
-        }
-        .visual-models-bar {
-            background-position: 0 0;
-        }
-        .visual-models-stackedbar {
-            background-position: 0 0;
-        }
-        .visual-models-column {
-            background-position: 0 0;
-        }
-        .visual-models-stackedcolumn {
-            background-position: 0 0;
-        }
-        .visual-models-line {
-            background-position: 0 0;
-        }
-        .visual-models-area {
-            background-position: 0 0;
-        }
-        .visual-models-pie {
-            background-position: 0 0;
-        }
-        .visual-models-doughnut {
-            background-position: 0 0;
-        }
-        .visual-models-sunburst {
-            background-position: 0 0;
-        }
-        .visual-models-scatter {
-            background-position: 0 0;
-        }
-        .visual-models-bubble {
-            background-position: 0 0;
-        }
-        .visual-models-heatgrid {
-            background-position: 0 0;
-        }
-        .visual-models-geomap {
-            background-position: 0 0;
-        }
+      background-color: white;
+      border: 1px solid #aaaaaa;
+      cursor: default;
     }
+  }
+  &:hover {
+    border: 1px solid #99bedb;
+    background-color: #e6eff6;
+    border-radius: 2px;
+    .visual-models-table {
+      background-position: 0 0;
+    }
+    .visual-models-pivottable {
+      background-position: 0 0;
+    }
+    .visual-models-bar {
+      background-position: 0 0;
+    }
+    .visual-models-stackedbar {
+      background-position: 0 0;
+    }
+    .visual-models-column {
+      background-position: 0 0;
+    }
+    .visual-models-stackedcolumn {
+      background-position: 0 0;
+    }
+    .visual-models-line {
+      background-position: 0 0;
+    }
+    .visual-models-area {
+      background-position: 0 0;
+    }
+    .visual-models-pie {
+      background-position: 0 0;
+    }
+    .visual-models-doughnut {
+      background-position: 0 0;
+    }
+    .visual-models-sunburst {
+      background-position: 0 0;
+    }
+    .visual-models-scatter {
+      background-position: 0 0;
+    }
+    .visual-models-bubble {
+      background-position: 0 0;
+    }
+    .visual-models-heatgrid {
+      background-position: 0 0;
+    }
+    .visual-models-geomap {
+      background-position: 0 0;
+    }
+  }
 }
 
 .visual-models-table {
-    background-image: url('/doc/images/table.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/table.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-pivottable {
-    background-image: url('/doc/images/pivot_table.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/pivot_table.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-bar {
-    background-image: url('/doc/images/bar_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/bar_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-stackedbar {
-    background-image: url('/doc/images/stacked_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/stacked_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-column {
-    background-image: url('/doc/images/column_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/column_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-stackedcolumn {
-    background-image: url('/doc/images/column_stacked.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/column_stacked.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-line {
-    background-image: url('/doc/images/line_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/line_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-area {
-    background-image: url('/doc/images/area_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/area_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-pie {
-    background-image: url('/doc/images/pie_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/pie_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-doughnut {
-    background-image: url('/doc/images/donut_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/donut_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-sunburst {
-    background-image: url('/doc/images/sunburst.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/sunburst.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-scatter {
-    background-image: url('/doc/images/scatter_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/scatter_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-bubble {
-    background-image: url('/doc/images/bubble_chart.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/bubble_chart.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-heatgrid {
-    background-image: url('/doc/images/heat_grid.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/heat_grid.svg");
+  background-position: -33px 0;
 }
 
 .visual-models-geomap {
-    background-image: url('/doc/images/geo_map.svg');
-    background-position: -33px 0;
+  background-image: url("/doc/images/geo_map.svg");
+  background-position: -33px 0;
 }

@@ -1,35 +1,35 @@
 // COLORS
 .color-container {
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    text-align: center;
-    line-height: 100px;
-    color: $white;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+  color: $white;
 }
 
 .color-container {
-    &.primary-color {
-        background-color: $primary-color;
-    }
-    &.secondary-color {
-        background-color: $secondary-color;
-    }
-    &.tertiary-color {
-        background-color: $tertiary-color;
-    }
-    &.quaternary-color {
-        background-color: $quaternary-color;
-    }
-    &.light-gray {
-        color: $dark-gray;
-        background-color: $light-gray;
-    }
-    &.medium-gray {
-        background-color: $medium-gray;
-        color: $dark-gray;
-    }
-    &.dark-gray {
-        background-color: $dark-gray;
-    }
+  &.primary-color {
+    background-color: $primary-color;
+  }
+  &.secondary-color {
+    background-color: $secondary-color;
+  }
+  &.tertiary-color {
+    background-color: $tertiary-color;
+  }
+  &.quaternary-color {
+    background-color: $quaternary-color;
+  }
+  &.light-gray {
+    color: $dark-gray;
+    background-color: $light-gray;
+  }
+  &.medium-gray {
+    background-color: $medium-gray;
+    color: $dark-gray;
+  }
+  &.dark-gray {
+    background-color: $dark-gray;
+  }
 }

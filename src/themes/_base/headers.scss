@@ -1,70 +1,70 @@
 // PUC HEADER
 .puc-header {
-    font-size: 13px;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .puc-menu-bar {
-    background: $puc-top-header-background-color;
-    border-top: $puc-top-header-border;
+  background: $puc-top-header-background-color;
+  border-top: $puc-top-header-border;
+  padding: 0;
+  width: 100%;
+  font-weight: 100;
+  ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
-    width: 100%;
-    font-weight: 100;
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+  }
+  li {
+    color: $puc-header-text-color;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 5px 15px;
+    &:hover {
+      background-color: $puc-bottom-header-background-hover-color;
+      color: $white;
     }
-    li {
-        color: $puc-header-text-color;
-        display: inline-block;
-        font-size: 13px;
-        line-height: 20px;
-        padding: 5px 15px;
-        &:hover {
-            background-color: $puc-bottom-header-background-hover-color;
-            color: $white;
-        }
-    }
+  }
 }
 
 .puc-perspective {
+  padding: 0;
+  width: 100%;
+  background: $puc-bottom-header-background-color;
+  font-weight: 100;
+  height: 50px;
+  ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
-    width: 100%;
-    background: $puc-bottom-header-background-color;
-    font-weight: 100;
-    height: 50px;
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+  }
+  li {
+    display: inline-block;
+    color: $puc-header-menu-text-color;
+    line-height: 50px;
+    padding: 0 15px;
+    &:first-child {
+      font-size: 24px;
+      float: left;
+      background: $puc-header-menu-icon;
+      background-position: right center;
+      background-repeat: no-repeat;
+      padding-right: 25px;
     }
-    li {
-        display: inline-block;
-        color: $puc-header-menu-text-color;
-        line-height: 50px;
-        padding: 0 15px;
-        &:first-child {
-            font-size: 24px;
-            float: left;
-            background: $puc-header-menu-icon;
-            background-position: right center;
-            background-repeat: no-repeat;
-            padding-right: 25px;
-        }
-        &:last-child {
-            float: right;
-            font-size: 18px;
-            background-image: $puc-header-menu-icon;
-            background-position: right center;
-            background-repeat: no-repeat;
-            padding-right: 25px;
-            margin-right: 15px;
-        }
-        &:hover {
-            background-color: transparent;
-            cursor: default;
-        }
+    &:last-child {
+      float: right;
+      font-size: 18px;
+      background-image: $puc-header-menu-icon;
+      background-position: right center;
+      background-repeat: no-repeat;
+      padding-right: 25px;
+      margin-right: 15px;
     }
+    &:hover {
+      background-color: transparent;
+      cursor: default;
+    }
+  }
 }

@@ -22,7 +22,7 @@ html(lang='en')
               option(value=theme.label)=theme.label
         .list
           p.title Components
-          ul
+          ul.components-list
             each component in componentsList
               li
                 a(href=component.link)=component.label
@@ -31,9 +31,8 @@ html(lang='en')
       .col-right
         .list
           p.title Table of Contents
-          ul
+          ul.contents-list
             each content in contentsList
               li
-                a(href=content.link onClick="main.navigateTo()")=content.label
+                a(href=content.link)=content.label
       script(src="../scripts/main.js")
-      script(src="../scripts/jquery.js")

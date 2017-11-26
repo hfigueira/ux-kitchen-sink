@@ -1,66 +1,66 @@
 // TABLES
 table.table-container {
-    user-select: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid $table-container-border-color;
-    border-bottom: 0;
-    border-spacing: 0;
-    table-layout: fixed;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $table-container-border-color;
+  border-bottom: 0;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 table.table-container th {
-    background-color: $table-container-header-background-color;
-    color: $table-container-header-text-color;
-    border-right: 1px solid $table-container-header-border-right-color;
-    text-align: left;
-    font-size: 12px;
-    border-spacing: 0;
-    padding: 10px;
-    line-height: 18px;
-    font-weight: normal;
-    &:first-child::after {
-        content: "";
-        display: inline-block;
-        width: 9px;
-        height: 9px;
-        margin-left: 5px;
-        background: url('/doc/images/sort-img.png') no-repeat -9px 0px;
-    }
-    &:last-child {
-        border-right: 0;
-    }
+  background-color: $table-container-header-background-color;
+  color: $table-container-header-text-color;
+  border-right: 1px solid $table-container-header-border-right-color;
+  text-align: left;
+  font-size: 12px;
+  border-spacing: 0;
+  padding: 10px;
+  line-height: 18px;
+  font-weight: normal;
+  &:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-left: 5px;
+    background: url("/doc/images/sort-img.png") no-repeat -9px 0px;
+  }
+  &:last-child {
+    border-right: 0;
+  }
 }
 
 table.table-container td {
-    border-right: 1px solid $table-container-data-border-right-color;
-    border-bottom: 1px solid $table-container-data-border-bottom-color;
-    color: $table-container-data-text-color;
-    text-align: left;
-    min-width: 100px;
-    font-size: 12px;
-    border-spacing: 0;
-    padding: 4px 10px;
-    font-weight: normal;
-    &:last-child {
-        border-right: 0;
-    }
+  border-right: 1px solid $table-container-data-border-right-color;
+  border-bottom: 1px solid $table-container-data-border-bottom-color;
+  color: $table-container-data-text-color;
+  text-align: left;
+  min-width: 100px;
+  font-size: 12px;
+  border-spacing: 0;
+  padding: 4px 10px;
+  font-weight: normal;
+  &:last-child {
+    border-right: 0;
+  }
 }
 
 table.table-container tr {
-    &:last-child {
-        border-bottom: 0;
-    }
-    &:nth-child(odd) {
-        background-color: $table-container-row-odd-background-color;
-    }
-    &:hover {
-        background: $table-container-row-background-hover-color;
-        color: $table-container-row-text-hover-color;
-        cursor: pointer;
-    }
-    &.active {
-        background-color: $table-container-row-background-active-color;
-    }
+  &:last-child {
+    border-bottom: 0;
+  }
+  &:nth-child(odd) {
+    background-color: $table-container-row-odd-background-color;
+  }
+  &:hover {
+    background: $table-container-row-background-hover-color;
+    color: $table-container-row-text-hover-color;
+    cursor: pointer;
+  }
+  &.active {
+    background-color: $table-container-row-background-active-color;
+  }
 }

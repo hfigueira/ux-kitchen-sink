@@ -1,31 +1,31 @@
 // DIALOGS
 .dialog-background {
-    background-color: opacify($color: $dark-gray, $amount: .5);
-    padding: 40px;
+  background-color: opacify($color: $dark-gray, $amount: 0.5);
+  padding: 40px;
 }
 
 .dialog-container {
-    background-color: $dialog-container-background;
-    border: 1px solid $dialog-container-border;
-    width: 500px;
-    border-radius: 4px;
-    padding: 20px;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    margin: 0 auto; //just to center align the container
+  background-color: $dialog-container-background;
+  border: 1px solid $dialog-container-border;
+  width: 500px;
+  border-radius: 4px;
+  padding: 20px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0 auto; //just to center align the container
 }
 
 .dialog-title {
-    color: $dialog-title-text-color;
-    font-weight: 100;
-    font-size: 24px;
-    margin-bottom: 20px;
+  color: $dialog-title-text-color;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .dialog-footer {
-    padding-top: 20px;
-    text-align: right;
-    button {
-        display: inline-block;
-        margin-left: 10px;
-    }
+  padding-top: 20px;
+  text-align: right;
+  button {
+    display: inline-block;
+    margin-left: 10px;
+  }
 }

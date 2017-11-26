@@ -1,15 +1,15 @@
 // General Colors
 $white: #ffffff;
-$super-light-gray: #FDFDFD;
-$light-gray:#F8F8F8;
-$medium-gray:#E0E0E0;
-$gray: #CCCCCC;
+$super-light-gray: #fdfdfd;
+$light-gray: #f8f8f8;
+$medium-gray: #e0e0e0;
+$gray: #cccccc;
 $medium-dark-gray: #666666;
-$dark-gray:#414141;
-$super-light-red: #F1CCCC;
-$light-red: #FF312E;
+$dark-gray: #414141;
+$super-light-red: #f1cccc;
+$light-red: #ff312e;
 $red: #cc0000;
-$dark-red: #7C0B2B;
+$dark-red: #7c0b2b;
 //
 // Functional Variables
 $primary-color: $red;
@@ -35,5 +35,5 @@ $list-primary-hover-text-color: $dark-gray;
 //
 //
 // LOADING
-$loading-image-spinner: url('/doc/images/loading-ruby.gif');
+$loading-image-spinner: url("/doc/images/loading-ruby.gif");
 $loading-message-text-color: $medium-dark-gray;
