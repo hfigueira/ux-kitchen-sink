@@ -1,24 +1,24 @@
 ul.list-container {
-    border: 1px solid $list-container-border-color;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-width: 200px;
-    min-height: 200px;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  border: 1px solid $list-container-border-color;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 200px;
+  min-height: 200px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 li {
-    color: $list-primary-text-color;
-    line-height: 25px;
-    padding: 0 10px;
-    font-size: 14px;
-    &:hover {
-        background-color: $list-primary-hover-background-color;
-        color: $list-primary-hover-text-color;
-    }
-    &.selected {
-        background-color: $list-primary-selected-background-color;
-        color: $list-primary-selected-text-color;
-    }
+  color: $list-primary-text-color;
+  line-height: 25px;
+  padding: 0 10px;
+  font-size: 14px;
+  &:hover {
+    background-color: $list-primary-hover-background-color;
+    color: $list-primary-hover-text-color;
+  }
+  &.selected {
+    background-color: $list-primary-selected-background-color;
+    color: $list-primary-selected-text-color;
+  }
 }

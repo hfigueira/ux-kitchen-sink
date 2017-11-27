@@ -15,7 +15,8 @@ $secondary-button-text-color: $white !default;
 $secondary-button-hover-text-color: $white !default;
 // Disabled button
 $primary-button-disabled-background-color: $primary-disabled-color !default;
-$primary-button-disabled-hover-background-color: $primary-disabled-color !default;
+$primary-button-disabled-hover-background-color: $primary-disabled-color
+  !default;
 $primary-button-disabled-border-color: $primary-disabled-color !default;
 $primary-button-disabled-hover-border-color: $primary-color !default;
 $primary-button-disabled-text-color: $secondary-disabled-color !default;
@@ -76,7 +77,7 @@ $puc-bottom-header-background-color: $light-gray !default;
 $puc-bottom-header-background-hover-color: $primary-color !default;
 $puc-header-text-color: $dark-gray !default;
 $puc-header-menu-text-color: $dark-gray !default;
-$puc-header-menu-icon: url('/doc/images/dropdown_down_arrow_black.png') !default;
+$puc-header-menu-icon: url("/doc/images/dropdown_down_arrow_black.png") !default;
 //
 //
 // LISTS ---------------------------------------------
@@ -90,7 +91,7 @@ $list-primary-hover-text-color: $white !default;
 //
 //
 // LOADING ---------------------------------------------
-$loading-image-spinner: url('/doc/images/loading-ruby.gif') !default;
+$loading-image-spinner: url("/doc/images/loading-ruby.gif") !default;
 $loading-message-text-color: $medium-dark-gray !default;
 $loading-message-background-color: $white !default;
 $loading-message-border-color: $medium-gray !default;

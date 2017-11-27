@@ -1,15 +1,15 @@
 // General Colors
 $white: #ffffff;
-$super-light-gray: #FDFDFD;
-$light-gray:#F8F8F8;
-$medium-gray:#E0E0E0;
-$gray: #CCCCCC;
+$super-light-gray: #fdfdfd;
+$light-gray: #f8f8f8;
+$medium-gray: #e0e0e0;
+$gray: #cccccc;
 $medium-dark-gray: #666666;
-$dark-gray:#414141;
-$super-light-blue: #E6EFF6;
-$light-blue: #669ECA;
-$blue: #005DA6;
-$dark-blue: #0F2B5B;
+$dark-gray: #414141;
+$super-light-blue: #e6eff6;
+$light-blue: #669eca;
+$blue: #005da6;
+$dark-blue: #0f2b5b;
 //
 // Functional Variables
 $primary-color: $blue;
@@ -58,7 +58,7 @@ $puc-bottom-header-background-color: $primary-color;
 $puc-bottom-header-background-hover-color: $primary-color;
 $puc-header-menu-text-color: $white;
 $puc-header-text-color: $white;
-$puc-header-menu-icon: url('/doc/images/dropdown_down_arrow_white.png');
+$puc-header-menu-icon: url("/doc/images/dropdown_down_arrow_white.png");
 //
 //
 //  ------------- LISTS ---------------
@@ -70,7 +70,7 @@ $list-primary-hover-text-color: $text-light-color;
 //
 //
 //  ------------- LOADING -------------
-$loading-image-spinner: url('/doc/images/loading-sapphire.gif');
+$loading-image-spinner: url("/doc/images/loading-sapphire.gif");
 $loading-message-text-color: $medium-dark-gray;
 //
 //

@@ -3,8 +3,17 @@ const activeTheme = localStorage.getItem("activeTheme") || defaultTheme;
 const themeSelector = document.getElementsByClassName("theme-selector")[0];
 
 const init = () => {
+  const activeComponent = document.location.pathname.split("/").pop();
+  const activeContent = document.location.hash;
+  setListState(".components-list li", activeComponent);
+  setListState(".contents-list li", activeContent);
+
   setActiveTheme(activeTheme);
   loadTheme(activeTheme);
+
+  window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+  };
 };
 
 const setActiveTheme = theme => {
@@ -13,7 +22,7 @@ const setActiveTheme = theme => {
 };
 
 const loadTheme = theme => {
-  var element = document.createElement("link");
+  const element = document.createElement("link");
   element.setAttribute("rel", "stylesheet");
   element.setAttribute("type", "text/css");
   element.setAttribute("href", "../../themes/" + theme + ".css");
@@ -26,8 +35,31 @@ export const changeTheme = () => {
   location.reload();
 };
 
-export const navigateTo = () => {
-  console.log("> Navigate");
+const setListState = (selector, active) => {
+  const list = document.querySelectorAll(selector);
+
+  list.forEach(elem => {
+    const link = elem.getElementsByTagName("a")[0].getAttribute("href");
+
+    elem.addEventListener("click", e => {
+      e.preventDefault();
+      updateListState(list, link);
+      window.open(link, "_self");
+    });
+  });
+
+  updateListState(list, active);
+};
+
+const updateListState = (list, active) => {
+  list.forEach(elem => {
+    const link = elem.getElementsByTagName("a")[0].getAttribute("href");
+
+    elem.classList.remove("active");
+    if (active === link) {
+      elem.classList.add("active");
+    }
+  });
 };
 
 init();

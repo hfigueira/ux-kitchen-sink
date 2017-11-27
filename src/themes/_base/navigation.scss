@@ -1,110 +1,110 @@
 // PERSPECTIVE CONTROL
 .perspective-control {
-    border: 1px solid $perspective-control-border-color;
-    box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, .2);
-    font-family: 'Open Sans', Helvetica, Arial, Sans serif;
-    font-weight: 100;
-    font-size: 14px;
-    max-width: 200px;
+  border: 1px solid $perspective-control-border-color;
+  box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans", Helvetica, Arial, Sans serif;
+  font-weight: 100;
+  font-size: 14px;
+  max-width: 200px;
 }
 
-.perspective-control>.menu-bar>ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.perspective-control > .menu-bar > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.perspective-control>.menu-bar>ul>li {
+.perspective-control > .menu-bar > ul > li {
+  line-height: 20px;
+  list-style: none;
+  padding: 8px 5px 8px 10px;
+  &:first-child {
+    background-color: $perspective-control-list-background-color;
+    font-size: 24px;
+    padding: 15px 10px 20px;
+  }
+  &:first-child:hover {
+    background: $perspective-control-list-background-color;
+    color: $flyout-menu-container-list-text-selected-color;
+    cursor: default;
+  }
+  &.selected,
+  &.selected:hover {
+    background-color: $perspective-control-list-background-selected-color;
+    color: $perspective-control-list-text-selected-color;
+  }
+  &:hover {
+    background-color: $perspective-control-list-background-hover-color;
+    color: $perspective-control-list-text-hover-color;
+  }
+  &.disabled {
+    background-color: $perspective-control-list-background-disabled-color;
+    color: $perspective-control-list-text-disabled-color;
+  }
+  &.disabled:hover {
+    background-color: $perspective-control-list-background-disabled-hover-color;
+    cursor: default;
+  }
+  &.active {
+    background-color: $perspective-control-list-background-active-color;
+  }
+  &.active::after {
+    content: "";
+    display: inline-block;
     line-height: 20px;
+    width: 18px;
+    height: 12px;
+    margin-left: 0;
+    background: url("/doc/images/dropdown_down_arrow_black.png") no-repeat;
+  }
+  .perspective-control > .menu-bar > ul {
     list-style: none;
-    padding: 8px 5px 8px 10px;
-    &:first-child {
-        background-color: $perspective-control-list-background-color;
-        font-size: 24px;
-        padding: 15px 10px 20px;
-    }
-    &:first-child:hover {
-        background: $perspective-control-list-background-color;
-        color: $flyout-menu-container-list-text-selected-color;
-        cursor: default;
-    }
-    &.selected,
-    &.selected:hover {
-        background-color: $perspective-control-list-background-selected-color;
-        color: $perspective-control-list-text-selected-color;
-    }
-    &:hover {
-        background-color: $perspective-control-list-background-hover-color;
-        color: $perspective-control-list-text-hover-color;
-    }
-    &.disabled {
-        background-color: $perspective-control-list-background-disabled-color;
-        color: $perspective-control-list-text-disabled-color;
-    }
-    &.disabled:hover {
-        background-color: $perspective-control-list-background-disabled-hover-color;
-        cursor: default;
-    }
-    &.active {
-        background-color: $perspective-control-list-background-active-color;
-    }
-    &.active::after {
-        content: "";
-        display: inline-block;
-        line-height: 20px;
-        width: 18px;
-        height: 12px;
-        margin-left: 0;
-        background: url("/doc/images/dropdown_down_arrow_black.png") no-repeat;
-    }
-    .perspective-control>.menu-bar>ul {
-        list-style: none;
-    }
+  }
 }
 
 // USER CONTROL
 .user-control {
-    border: 1px solid $user-control-border-color;
-    box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, .2);
-    font-family: 'Open Sans', Helvetica, Arial, Sans serif;
-    font-weight: 100;
-    font-size: 14px;
-    max-width: 115px;
+  border: 1px solid $user-control-border-color;
+  box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans", Helvetica, Arial, Sans serif;
+  font-weight: 100;
+  font-size: 14px;
+  max-width: 115px;
 }
 
-.user-control>.menu-bar>ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.user-control > .menu-bar > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.user-control>.menu-bar>ul>li {
+.user-control > .menu-bar > ul > li {
+  line-height: 20px;
+  list-style: none;
+  padding: 8px 5px 8px 10px;
+  &:first-child {
+    background-color: $user-control-list-background-active-color;
+    font-size: 24px;
+    padding: 15px 10px 20px;
+  }
+  &:first-child:hover {
+    background: $user-control-list-background-active-color;
+    cursor: default;
+  }
+  &.active {
+    background-color: $user-control-list-background-active-color;
+  }
+  &:hover {
+    background-color: $user-control-list-background-hover-color;
+    color: #414141;
+  }
+  &.active::after {
+    content: "";
+    display: inline-block;
     line-height: 20px;
-    list-style: none;
-    padding: 8px 5px 8px 10px;
-    &:first-child {
-        background-color: $user-control-list-background-active-color;
-        font-size: 24px;
-        padding: 15px 10px 20px;
-    }
-    &:first-child:hover {
-        background: $user-control-list-background-active-color;
-        cursor: default;
-    }
-    &.active {
-        background-color: $user-control-list-background-active-color;
-    }
-    &:hover {
-        background-color: $user-control-list-background-hover-color;
-        color: #414141;
-    }
-    &.active::after {
-        content: "";
-        display: inline-block;
-        line-height: 20px;
-        width: 18px;
-        height: 12px;
-        margin-left: 0;
-        background: url("/doc/images/dropdown_down_arrow_black.png") no-repeat;
-    }
+    width: 18px;
+    height: 12px;
+    margin-left: 0;
+    background: url("/doc/images/dropdown_down_arrow_black.png") no-repeat;
+  }
 }
