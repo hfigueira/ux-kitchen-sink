@@ -67,6 +67,24 @@ This last one is the folder that we are going to use to make it “live” if we
 **Note:** Since we are using watchers to the build, every time we save a file, the project will be reloaded on the browser with the last changes.
 
 
+	ux-kitchen-sink/
+	├── src/
+	│	├── doc/
+	│	│	├── _components/
+	│	│	└── static/
+	│	└── themes/
+	│		├── _base/
+	│		│	├── _variables.scss
+	│		│	├── _generic.scss
+	│		│	└── component-1.scss
+	│		└── custom-theme/
+	│			├── _scss.scss
+	│			└── custom.scss
+	│		
+	└── build/
+		├── doc/
+		└── themes/
+
 ***
 
 
